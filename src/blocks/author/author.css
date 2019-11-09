@@ -1,0 +1,9 @@
+@import url('author__photo-frame.css');
+@import url('author__photo.css');
+@import url('author__text.css');
+@import url('author__title.css');
+@import url('author__p.css');
+.author {
+    display: flex;
+    padding: 80px 104px;
+}

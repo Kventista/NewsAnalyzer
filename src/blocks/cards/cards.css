@@ -1,0 +1,28 @@
+@import url('cards_box.css');
+@import url('cards_item.css');
+@import url('cards_item__image.css');
+@import url('cards_item__date.css');
+@import url('cards_item__subtitle.css');
+@import url('cards_item__description.css');
+@import url('cards_item__source.css');
+@import url('cards__button.css');
+.cards {
+    padding: 80px 104px;
+    background-color: #f5f6f7;
+    position: relative;
+    /*display: none*/
+}
+
+.cards:before {
+    content: "";
+    background-color: #f5f6f7;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}

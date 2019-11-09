@@ -1,0 +1,10 @@
+@import url('search_title.css');
+@import url('search_subtitle.css');
+@import url('form.css');
+.search-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 29%;
+}

@@ -1,0 +1,10 @@
+@import url('footer__cp.css');
+@import url('footer__link.css');
+@import url('footer__box.css');
+@import url('footer__fav-box.css');
+@import url('footer__fav.css');
+.footer {
+    display: flex;
+    padding: 25px 76px 25px 104px;
+    justify-content: space-between;
+}

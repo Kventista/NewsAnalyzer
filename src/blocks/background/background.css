@@ -1,0 +1,15 @@
+.background:before {
+    background: url('../../images/phone.svg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    height: 569px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: -1;
+    background-position: center 0;
+}
