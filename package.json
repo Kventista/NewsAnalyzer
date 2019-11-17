@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Kventista/Diploma.git"
+        "url": "git+https://github.com/Kventista/NewsAnalyzer.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Kventista/Diploma/issues"
+        "url": "https://github.com/Kventista/NewsAnalyzer/issues"
     },
-    "homepage": "https://github.com/Kventista/Diploma#readme",
+    "homepage": "https://kventista.github.io/NewsAnalyzer/",
     "devDependencies": {
         "@babel/cli": "7.6.4",
         "@babel/core": "7.6.4",
@@ -28,7 +28,7 @@
         "css-loader": "3.2.0",
         "cssnano": "4.1.10",
         "file-loader": "4.2.0",
-        "gh-pages": "2.1.1",
+        "gh-pages": "~2.0.1",
         "html-webpack-plugin": "3.2.0",
         "image-webpack-loader": "6.0.0",
         "mini-css-extract-plugin": "0.8.0",
