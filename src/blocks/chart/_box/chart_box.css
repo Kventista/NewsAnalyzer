@@ -1,0 +1,6 @@
+@import url('../__mention/chart_box__mention.css');
+.chart_box {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 104px 1fr;
+}

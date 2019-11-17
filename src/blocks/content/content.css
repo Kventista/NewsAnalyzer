@@ -1,6 +1,4 @@
-@import url('content_data.css');
-@import url('content_data__title.css');
-@import url('content_data__analitics.css');
+@import url('./_data/content_data.css');
 .content {
     margin: 0;
     position: relative;

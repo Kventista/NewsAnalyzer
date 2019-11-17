@@ -1,10 +1,26 @@
-@import url('footer__cp.css');
-@import url('footer__link.css');
-@import url('footer__box.css');
-@import url('footer__fav-box.css');
-@import url('footer__fav.css');
+@import url('./_cp/footer_cp.css');
+@import url('./_box/footer_box.css');
+@import url('./_boxfav/footer_boxfav.css');
 .footer {
     display: flex;
     padding: 25px 76px 25px 104px;
     justify-content: space-between;
+}
+
+@media (max-width: 440px) {
+    .footer {
+        padding: 20px 16px 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 950px) {
+    .footer {
+        padding: 24px 12px 24px 40px;
+    }
 }

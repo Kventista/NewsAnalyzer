@@ -1,6 +1,0 @@
-.cards_box {
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 64px 0;
-    grid-gap: 16px;
-    /*display: none;*/
-}

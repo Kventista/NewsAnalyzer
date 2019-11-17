@@ -1,0 +1,12 @@
+.slip_box__date {
+    color: #b6bcbf;
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (max-width: 679px) {
+    .slip_box__date {
+        margin: 0 0 5px;
+    }
+}

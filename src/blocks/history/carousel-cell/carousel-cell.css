@@ -1,0 +1,27 @@
+@import url('../../commit/commit.css');
+.carousel-cell {
+    width: 33%;
+    height: 250px;
+    margin-right: 10px;
+    width: 400px!important;
+    min-height: 220px;
+    margin-bottom: 136px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+@media (max-width: 399px) {
+    .carousel-cell {
+        width: 100%!important;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 799px) {
+    .carousel-cell {
+        width: 336px!important;
+        margin-bottom: 80px;
+    }
+}

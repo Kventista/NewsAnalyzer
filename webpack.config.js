@@ -9,7 +9,11 @@ const isDev = process.env.NODE_ENV === 'development';
 // подключаем path к конфигу вебпак
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: {
+        main: './src/index.js',
+        about: './src/about-project.js',
+        analytics: './src/analytics.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -69,6 +73,18 @@ module.exports = {
             inject: false, // стили НЕ нужно прописывать внутри тегов
             template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
             filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/about-project.html',
+            filename: 'about-project.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/analytics.html',
+            filename: 'analytics.html'
         }),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV),

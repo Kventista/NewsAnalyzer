@@ -1,0 +1,21 @@
+@import url('./_box/slip_box.css');
+.slip {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform .2s ease-in-out;
+}
+
+@media (max-width: 399px) {
+    .slip {
+        width: 100%!important;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 799px) {
+    .slip {
+        width: 336px!important;
+        margin-bottom: 80px;
+    }
+}

@@ -1,9 +1,0 @@
-.cards_item {
-    border-radius: 16px;
-    overflow: hidden;
-    background-color: #fff;
-    padding-bottom: 24px;
-    flex-direction: column;
-    justify-content: stretch;
-    /*text-decoration: none;*/
-}

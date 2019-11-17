@@ -1,0 +1,11 @@
+.info_source {
+    margin: 0 0 12px;
+    font-family: 'robotoslab';
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #b6bcbf;
+    padding-left: 24px;
+    margin-top: auto;
+}

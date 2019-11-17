@@ -1,0 +1,10 @@
+    .header_menu {
+        font-family: 'roboto-medium';
+        font-size: 1.1rem;
+        line-height: 1.3;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }

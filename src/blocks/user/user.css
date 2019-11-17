@@ -1,0 +1,6 @@
+@import url('./git-avatar.css');
+@import url('./_box/user_box.css');
+.user {
+    display: flex;
+    margin-bottom: 16px;
+}

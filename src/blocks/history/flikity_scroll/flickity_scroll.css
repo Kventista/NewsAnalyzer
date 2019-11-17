@@ -1,0 +1,11 @@
+@import url('../carousel-cell/carousel-cell.css');
+.flickity-button {
+    background: #000!important;
+    color: #FFF!important;
+}
+
+@media (max-width: 440px) {
+    .flickity-button {
+        display: none;
+    }
+}

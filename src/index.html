@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Ксения Макарова">
     <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
-    <link rel="icon" href="<%=require('./images/logo.svg')%>">
+    <link rel="icon" href="<%=require('../src/images/logo.png')%>">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="stylesheet" href="vendor/normalize.css">
     <title>NewsAnalyzer</title>
 </head>
 
@@ -16,20 +17,19 @@
     <div class="page">
         <div class="background">
             <header class="header">
-                <a class="header__logo" href="./index.html">NewsAnalyzer</a>
-                <nav class="header__menu">
-                    <a class="header__main" href="./index.html">Главная</a>
-                    <a class="header__about" href="./about-project.html">О проекте</a>
+                <a class="header_logo white-theme" href="./index.html">NewsAnalyzer</a>
+                <nav class="header_menu">
+                    <a class="header_menu__main white-theme" href="./index.html">Главная</a>
+                    <a class="header_menu__about white-theme" href="./about-project.html">О проекте</a>
             </header>
 
-            <section class="search-block">
-                <h1 class="search__title">Что в мире творится?</h1>
-                <p class="search__subtitle">Введите в поиске любую тему и узнайте насколько популярной она была в новостях за прошедшую неделю</p>
-                <form id="form-news" name="news">
-                    <input name="search" type="text" class="search-block__input" placeholder="Введите тему новости" />
-                    <button class="button">Искать</button>
+            <section class="search">
+                <h1 class="search_title">Что в мире творится?</h1>
+                <p class="search_subtitle">Введите в поиске любую тему и узнайте насколько популярной она была в новостях за прошедшую неделю</p>
+                <form id="search_form" name="search">
+                    <input name="search_field" type="text" class="search_field" placeholder="Введите тему новости" />
+                    <button class="button search_button">Искать</button>
                 </form>
-                <!--<img class="main__image" src="<%=require('./images/phone.svg')%>" alt="phone">-->
             </section>
         </div>
 
@@ -37,56 +37,117 @@
             <section class="cards">
                 <div class="content_data">
                     <h2 class="content_data__title">Результаты поиска</h2>
-                    <a class="content_data__analitics" href="./analitics.html">Посмотреть аналитику ></a>
+                    <a class="content_data__analytics" href="./analytics.html">Посмотреть аналитику ></a>
                 </div>
-                <div class="cards_box" style="display: grid;">
+                <div class="cards_box" style="">
                     <!--Пример верстки карточек-->
                     <a class="cards_item" href="ya.ru" target="_blank">
-                        <img class="cards_item__image" src="" alt="" target="_blank">
-                        <div class="cards_item__date">5 февраля, 2019</div>
-                        <h3 class="cards_item__subtitle">Весело - весело встретим новый год!</h3>
-                        <p class="cards_item__descrption">
-                            Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. Что же ждет остальных в этом страшном втором декабре? Может, хватит, а может, не хватит на ночь гробов.</p>
-                        <div class="cards_item__source"></div>
+                        <div class="cards_result">
+                            <div class="cards_result__wrap item-wrap">
+                                <img class="item-wrap_image" src="<%=require('./images/tyulpany.jpg')%>" alt="">
+                            </div>
+                            <div class="cards_result__box info">
+                                <p class="info_date">5 мая, 2019</p>
+                                <h3 class="info_subtitle">Весело - весело встретим новый год!</h3>
+                                <p class="info_description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. </p>
+                                <div class="info_source">Meduza.io</div>
+                            </div>
+                        </div>
                     </a>
-                    <a class="cards__item" href="ya.ru"></a>
-                    <a class="cards__item" href="ya.ru"></a>
-                    <a class="cards__item" href="ya.ru"></a>
-                    <a class="cards__item" href="ya.ru"></a>
-                    <a class="cards__item" href="ya.ru"></a>
+                    <a class="cards_item" href="ya.ru" target="_blank">
+                        <div class="cards_result">
+                            <div class="cards_result__wrap item-wrap">
+                                <img class="item-wrap_image" src="<%=require('./images/lavanda.jpg')%>" alt="">
+                            </div>
+                            <div class="cards_result__box info">
+                                <p class="info_date">5 августа, 2019</p>
+                                <h3 class="info_subtitle">Весело - весело встретим новый год!</h3>
+                                <p class="info_description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. </p>
+                                <div class="info_source">Meduza.io</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cards_item" href="ya.ru" target="_blank">
+                        <div class="cards_result">
+                            <div class="cards_result__wrap item-wrap">
+                                <img class="item-wrap_image" src="<%=require('./images/tyulpany.jpg')%>" alt="">
+                            </div>
+                            <div class="cards_result__box info">
+                                <p class="info_date">5 июля, 2019</p>
+                                <h3 class="info_subtitle">Весело - весело встретим новый год!</h3>
+                                <p class="info_description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. </p>
+                                <div class="info_source">Meduza.io</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cards_item" href="ya.ru" target="_blank">
+                        <div class="cards_result">
+                            <div class="cards_result__wrap item-wrap">
+                                <img class="item-wrap_image" src="<%=require('./images/lavanda.jpg')%>" alt="">
+                            </div>
+                            <div class="cards_result__box info">
+                                <p class="info_date">5 марта, 2019</p>
+                                <h3 class="info_subtitle">Весело - весело встретим новый год!</h3>
+                                <p class="info_description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. </p>
+                                <div class="info_source">Meduza.io</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cards_item" href="ya.ru" target="_blank">
+                        <div class="cards_result">
+                            <div class="cards_result__wrap item-wrap">
+                                <img class="item-wrap_image" src="<%=require('./images/tyulpany.jpg')%>" alt="">
+                            </div>
+                            <div class="cards_result__box info">
+                                <p class="info_date">5 апреля, 2019</p>
+                                <h3 class="info_subtitle">Весело - весело встретим новый год!</h3>
+                                <p class="info_description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. </p>
+                                <div class="info_source">Meduza.io</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cards_item" href="ya.ru" target="_blank">
+                        <div class="cards_result">
+                            <div class="cards_result__wrap item-wrap">
+                                <img class="item-wrap_image" src="<%=require('./images/lavanda.jpg')%>" alt="">
+                            </div>
+                            <div class="cards_result__box info">
+                                <p class="info_date">5 января, 2019</p>
+                                <h3 class="info_subtitle">Весело - весело встретим новый год!</h3>
+                                <p class="info_description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют бойцовскую кровь. </p>
+                                <div class="info_source">Meduza.io</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <button class="cards__button">Показать ещё</button>
+                <button class="button cards__button">Показать ещё</button>
             </section>
 
             <section class="author">
-                <div class="author__photo-frame">
-                    <img class="author__photo" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="фото автора">
+                <div class="author_photo-frame">
+                    <img class="author_photo" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="фото автора">
                 </div>
-                <div class="author__text">
-                    <h2 class="author__title">Об авторе</h2>
-                    <p class="author__p">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
+                <div class="author_text">
+                    <h2 class="author_text__title">Об авторе</h2>
+                    <p class="author_text__p">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
                         на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности. В лингвистике термин текст используется в широком значении, включая и образцы
-                        устной речи. Восприятие текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение, объективированное в виде письменного документа,
-                        Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
-                        на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.
-
+                        устной речи. Восприятие текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение, объективированное в виде письменного документа.
                 </div>
             </section>
-
         </main>
         <footer class="footer">
-            <span class="footer__cp">2019 Diplom</span>
-            <nav class="footer__box">
-                <a class="footer__link" href="">Главная</a>
-                <a class="footer__link" href="">О проекте</a>
-                <a class="footer__link" href="">Я.Практикум</a>
+            <span class="footer_cp">2019 Kventista</span>
+            <nav class="footer_box">
+                <a class="footer_box__link" href="./index.html">Главная</a>
+                <a class="footer_box__link" href="./about-project.html">О проекте</a>
+                <a class="footer_box__link" href="https://praktikum.yandex.ru">Я.Практикум</a>
             </nav>
-            <div class="footer__fav-box">
-                <a class="footer__fav" href="https://github.com">
+            <div class="footer_boxfav">
+                <a class="footer_boxfav__icon" href="https://github.com">
                     <img src="<%=require('./images/github.svg')%>"  alt="git-logo">
                 </a>
-                <a class="footer__fav" href="https://vk.com/kventista">
-                    <img src="<%=require('./images/fb.svg')%>"  alt="git-logo">
+                <a class="footer_boxfav__icon" href="https://vk.com/kventista">
+                    <img src="<%=require('./images/vk.png')%>"  alt="git-logo">
                 </a>
             </div>
         </footer>

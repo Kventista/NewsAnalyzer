@@ -1,0 +1,6 @@
+@import url('../_button/search_button.css');
+@import url('../_field/search_field.css');
+#search_form {
+    width: 100%;
+    position: relative;
+}

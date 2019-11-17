@@ -1,0 +1,7 @@
+@import url('../__date/chart_grid__date.css');
+@import url('../__graph/chart_grid__graph.css');
+.chart_grid {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 104px 1fr;
+}

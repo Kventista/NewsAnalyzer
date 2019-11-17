@@ -1,11 +1,10 @@
-@import url('cards_box.css');
-@import url('cards_item.css');
-@import url('cards_item__image.css');
-@import url('cards_item__date.css');
-@import url('cards_item__subtitle.css');
-@import url('cards_item__description.css');
-@import url('cards_item__source.css');
-@import url('cards__button.css');
+@import url('./_box/cards_box.css');
+@import url('./_item/cards_item.css');
+@import url('../info/info.css');
+@import url('../item-wrap/item-wrap.css');
+@import url('./_button/cards__button.css');
+@import url('../button/button.css');
+@import url('../link/a.css');
 .cards {
     padding: 80px 104px;
     background-color: #f5f6f7;
@@ -25,4 +24,16 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+}
+
+@media all and (max-width: 449px) {
+    .cards {
+        padding: 32px 16px 44px;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width: 950px) {
+    .cards {
+        padding: 40px;
+    }
 }

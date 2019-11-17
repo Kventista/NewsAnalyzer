@@ -1,0 +1,22 @@
+@import url('../__p/author_text__p.css');
+@import url('../__title/author_text__title.css');
+.author_text {
+    margin-left: 56px;
+    flex: 0 1 600px;
+    margin-top: 50px;
+}
+
+@media (max-width: 550px) {
+    .author_text {
+        flex: 1;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media all and (min-width: 551px) and (max-width: 1024px) {
+    .author_text {
+        margin-left: 32px;
+        margin-top: 0;
+    }
+}

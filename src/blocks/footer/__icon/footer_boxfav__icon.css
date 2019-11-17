@@ -1,0 +1,7 @@
+.footer_boxfav__icon {
+    margin-right: 28px;
+}
+
+.footer_boxfav__icon:nth-child(2) {
+    margin-right: 0;
+}

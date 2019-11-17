@@ -1,0 +1,18 @@
+@import url('./_tabs/analytics_tabs.css');
+@import url('./_title/analytics_title.css');
+@import url('./_news/analytics_news.css');
+.analytics {
+    padding: 40px 104px 80px;
+}
+
+@media (max-width: 440px) {
+    .analytics {
+        padding: 16px 16px 24px;
+    }
+}
+
+@media all and (min-width: 440px) and (max-width: 768px) {
+    .analytics {
+        padding: 32px 40px 40px;
+    }
+}

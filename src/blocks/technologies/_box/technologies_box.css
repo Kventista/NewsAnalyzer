@@ -1,0 +1,29 @@
+.technologies_box {
+    display: grid;
+    grid-template-areas: ". . . .";
+    grid-gap: 70px;
+    margin: auto;
+}
+
+@media (max-width: 440px) {
+    .technologies_box {
+        grid-template-areas: ".  .";
+        grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+        grid-gap: 64px;
+        margin: 0 20px;
+    }
+}
+
+@media all and (min-width: 441px) and (max-width: 768px) {
+    .technologies_box {
+        grid-gap: 94px;
+        grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+        grid-template-areas: inherit;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1108px) {
+    .technologies_box {
+        margin: auto 0;
+    }
+}

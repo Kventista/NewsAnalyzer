@@ -1,0 +1,39 @@
+@import url('details.css');
+@import url('../content/_data/content_data.css');
+@import url('./history_box/history_box.css');
+@import url('../slip/slip.css');
+@import url('../commit/commit.css');
+@import url('../user/user.css');
+.history {
+    background-color: #f5f6f7;
+    padding: 72px 104px 136px;
+    position: relative;
+}
+
+.history:before {
+    content: "";
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: absolute;
+    background-color: #f5f6f7;
+}
+
+@media (max-width: 440px) {
+    .history {
+        padding: 32px 16px 97px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (min-width: 441px) and (max-width: 768px) {
+    .history {
+        padding: 40px 40px 80px;
+    }
+}

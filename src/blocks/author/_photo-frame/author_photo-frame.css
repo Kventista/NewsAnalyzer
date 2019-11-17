@@ -1,0 +1,9 @@
+.author_photo-frame {
+    flex: 0 2 464px;
+}
+
+@media (max-width: 550px) {
+    .author_photo-frame {
+        flex: 1;
+    }
+}
