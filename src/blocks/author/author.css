@@ -1,6 +1,8 @@
-@import url('../author/_photo-frame/author_photo-frame.css');
-@import url('../author/_photo/author_photo.css');
-@import url('../author/_text/author_text.css');
+@import url('__photo-frame/author__photo-frame.css');
+@import url('__photo/author__photo.css');
+@import url('__text/author__text.css');
+@import url('__p/author__p.css');
+@import url('__title/author__title.css');
 .author {
     display: flex;
     padding: 80px 104px;

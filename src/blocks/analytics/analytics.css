@@ -1,6 +1,10 @@
-@import url('./_tabs/analytics_tabs.css');
-@import url('./_title/analytics_title.css');
-@import url('./_news/analytics_news.css');
+@import url('__tabs/analytics__tabs.css');
+@import url('__tabs-main/analytics__tabs-main.css');
+@import url('__tabs-current/analytics__tabs-current.css');
+@import url('__title/analytics__title.css');
+@import url('__news/analytics__news.css');
+@import url('__news-meaning/analytics__news-meaning.css');
+@import url('../analytics/meaning.css');
 .analytics {
     padding: 40px 104px 80px;
 }

@@ -1,0 +1,17 @@
+.header__logo {
+    font-family: 'robotoslab';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.header__logo:hover {
+    color: #b6bcbf;
+}
+
+@media (max-width: 500px) {
+    .header__logo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,13 @@
+.history__box {}
+
+@media (max-width: 399px) {
+    .history__box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 799px) {
+    .history__box {
+        min-height: 310px;
+    }
+}

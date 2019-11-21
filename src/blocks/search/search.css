@@ -1,6 +1,6 @@
-@import url('./_title/search_title.css');
-@import url('./_subtitle/search_subtitle.css');
-@import url('./_form/search_form.css');
+@import url('__title/search__title.css');
+@import url('__subtitle/search__subtitle.css');
+@import url('__form/search__form.css');
 @import url('../button/button.css');
 .search {
     color: white;

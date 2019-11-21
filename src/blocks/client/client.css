@@ -1,5 +1,5 @@
-@import url('./_title/client_title.css');
-@import url('./_p/client_p.css');
+@import url('__title/client__title.css');
+@import url('__p/client__p.css');
 .client {
     padding: 80px 104px;
 }

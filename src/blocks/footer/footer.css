@@ -1,6 +1,7 @@
-@import url('./_cp/footer_cp.css');
-@import url('./_box/footer_box.css');
-@import url('./_boxfav/footer_boxfav.css');
+@import url('__cp/footer__cp.css');
+@import url('__box/footer__box.css');
+@import url('__link/footer__link.css');
+@import url('__icon/footer__icon.css');
 .footer {
     display: flex;
     padding: 25px 76px 25px 104px;

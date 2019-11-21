@@ -1,7 +1,0 @@
-@import url('../__perc/chart_division__perc.css');
-.chart_division {
-    position: relative;
-    margin-left: 104px;
-    display: grid;
-    grid-template-areas: ". . . . .";
-}

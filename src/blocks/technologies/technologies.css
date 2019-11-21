@@ -1,6 +1,6 @@
-    @import url('./_title/technologies_title.css');
-    @import url('./_box/technologies_box.css');
-    @import url('./_item/technologies_item.css');
+    @import url('__title/technologies__title.css');
+    @import url('__box/technologies__box.css');
+    @import url('__item-title/technologies_item__title.css');
     .technologies {
         display: flex;
         flex-wrap: wrap;

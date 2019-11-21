@@ -1,0 +1,19 @@
+.footer__cp {
+    font-size: 1rem;
+    line-height: 1.37;
+    color: #b6bcbf;
+}
+
+@media (max-width: 440px) {
+    .footer__cp {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__cp {
+        flex: 100%;
+        order: 1;
+        margin-top: 18px;
+    }
+}

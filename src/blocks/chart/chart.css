@@ -1,8 +1,12 @@
-@import url('../chart/_title/chart_title.css');
-@import url('../chart/_box/chart_box.css');
-@import url('../chart/_container/chart_container.css');
-@import url('../chart/_division/chart_division.css');
-@import url('../chart/_grid/chart_grid.css');
+@import url('__title/chart__title.css');
+@import url('__box/chart__box.css');
+@import url('__box-mention/chart__box-mention.css');
+@import url('__container/chart__container.css');
+@import url('__division/chart__division.css');
+@import url('__division-perc/chart__division-perc.css');
+@import url('__grid/chart__grid.css');
+@import url('__grid-date/chart__grid-date.css');
+@import url('__grid-graph/chart_grid__graph.css');
 .chart {
     position: relative;
     padding-left: 104px;

@@ -1,9 +1,9 @@
 @import url('../theme/black-theme.css');
 @import url('../theme/white-theme.css');
-@import url('./_logo/header_logo.css');
-@import url('./_menu/header_menu.css');
-@import url('./_menu/header_menu__about.css');
-@import url('./_menu/header_menu__main.css');
+@import url('__logo/header__logo.css');
+@import url('__menu/header__menu.css');
+@import url('__about/header__about.css');
+@import url('__main/header__main.css');
 .header {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,7 @@
+.footer__icon {
+    margin-right: 28px;
+}
+
+.footer__icon:nth-child(2) {
+    margin-right: 0;
+}

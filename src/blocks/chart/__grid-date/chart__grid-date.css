@@ -1,0 +1,13 @@
+.chart__grid-date {
+    margin: 0;
+    width: 104px;
+    text-align: start;
+    flex-shrink: 0;
+    font-family: 'roboto-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
