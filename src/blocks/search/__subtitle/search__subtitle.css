@@ -2,8 +2,8 @@
     font-family: 'roboto-regular';
     font-size: 18px;
     line-height: 26px;
-    margin: 0 0 64px;
     margin: 0 auto;
+    padding-bottom: 32px;
 }
 
 @media (max-width: 500px) {

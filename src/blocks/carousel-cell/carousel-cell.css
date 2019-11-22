@@ -18,14 +18,14 @@
     transition-property: transform;
 }
 
-@media (max-width: 399px) {
+@media  all and (max-width: 399px) {
     .carousel-cell {
         width: 100%!important;
         margin-bottom: 48px;
     }
 }
 
-@media (max-width: 799px) {
+@media all and (min-width: 399px)and (max-width: 799px)  {
     .carousel-cell {
         width: 336px!important;
         margin-bottom: 80px;

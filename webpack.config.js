@@ -29,12 +29,6 @@ module.exports = {
                 use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader'] // добавили минификацию CSS
             },
             {
-                test: /\.(png|jpg)$/,
-                use: {
-                    loader: 'url-loader'
-                }
-            },
-            {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 use: {
                     loader: 'file-loader',
@@ -45,7 +39,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(png|jpg|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -92,4 +86,3 @@ module.exports = {
         new WebpackMd5Hash()
     ]
 };
-// переписали точку выхода, используя утилиту path
