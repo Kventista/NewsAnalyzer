@@ -1,4 +1,4 @@
-.user_box__mail {
+.carousel-cell__mail {
     color: #1a1b22;
     margin: -17px 0 0;
     font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 1023px) {
-    .user_box__mail {
+    .carousel-cell__mail {
         margin: -5px 0 0;
     }
 }

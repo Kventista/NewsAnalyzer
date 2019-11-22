@@ -1,11 +1,17 @@
-@import url('../../commit/commit.css');
+@import url('__box/carousel-cell__box.css');
+@import url('__date/carousel-cell__date.css');
+@import url('__info/carousel-cell__info.css');
+@import url('__avatar/carousel-cell__avatar.css');
+@import url('__user/carousel-cell__user.css');
+@import url('__title/carousel-cell__title.css');
+@import url('__mail/carousel-cell__mail.css');
+@import url('__text/carousel-cell__text.css');
 .carousel-cell {
     width: 33%;
     height: 250px;
     margin-right: 10px;
     width: 400px!important;
     min-height: 220px;
-    margin-bottom: 136px;
     flex-shrink: 0;
     height: 100%;
     position: relative;

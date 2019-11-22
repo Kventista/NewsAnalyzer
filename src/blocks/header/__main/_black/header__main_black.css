@@ -1,0 +1,15 @@
+.header__main_black {
+  color: #b6bcbf;
+}
+
+.header__main_black:hover {
+  color: #000;
+}
+
+@media (max-width: 500px) {
+  .header__main_black {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-right: 11px;
+  }
+}

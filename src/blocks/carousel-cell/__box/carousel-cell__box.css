@@ -1,0 +1,13 @@
+.carousel-cell__box {
+    margin-top: 20px;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #fff;
+    transition: transform .2s ease-in-out;
+}
+
+@media (max-width: 679px) {
+    .carousel-cell__box {
+        margin: 12px 16px 20px;
+    }
+}

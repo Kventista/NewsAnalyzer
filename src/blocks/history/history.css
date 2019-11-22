@@ -1,10 +1,6 @@
 @import url('../content/content.css');
-@import url('../flikity/flickity.css');
-@import url('details.css');
+@import url('../carousel-cell/carousel-cell.css');
 @import url('__box/history__box.css');
-@import url('../slip/slip.css');
-@import url('../commit/commit.css');
-@import url('../user/user.css');
 .history {
     background-color: #f5f6f7;
     padding: 72px 104px 136px;

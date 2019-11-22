@@ -1,4 +1,4 @@
-.user_box__title {
+.carousel-cell__title {
     color: #1a1b22;
     margin: 0 0 16px;
     font-family: 'robotoslab';
@@ -8,13 +8,13 @@
 }
 
 @media (max-width: 399px) {
-    .user_box__title {
+    .carousel-cell__title {
         max-width: 150px;
     }
 }
 
 @media (max-width: 1023px) {
-    .user_box__title {
+    .carousel-cell__title {
         margin: 0 0 10px;
         font-size: 22px;
         line-height: 24px;

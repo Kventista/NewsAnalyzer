@@ -1,4 +1,7 @@
-.history__box {}
+.history__box {
+  height: 100%;
+  
+}
 
 @media (max-width: 399px) {
     .history__box {

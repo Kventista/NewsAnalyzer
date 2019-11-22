@@ -1,21 +1,32 @@
-@import url('./_box/slip_box.css');
-.slip {
+.carousel-cell__user {
     border-radius: 16px;
-    overflow: hidden;
     background-color: #fff;
     transition: transform .2s ease-in-out;
 }
-
+/*
 @media (max-width: 399px) {
-    .slip {
+    .carousel-cell__user {
         width: 100%!important;
         margin-bottom: 48px;
     }
 }
 
 @media (max-width: 799px) {
-    .slip {
+    .carousel-cell__user {
         width: 336px!important;
         margin-bottom: 80px;
     }
 }
+
+.details {
+    padding-bottom: 64px;
+}
+
+@media (max-width: 650px) {
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+}
+}*/
