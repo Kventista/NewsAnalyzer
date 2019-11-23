@@ -2,15 +2,23 @@
   height: 100%;
   
 }
-
-@media (max-width: 399px) {
-    .history__box {
-        width: 90%;
-    }
+@media (max-width: 440px) {
+.history__box {
+  width: calc(100% + 32px);
+  margin: 0 -16px;
+  }
 }
 
-@media (max-width: 799px) {
-    .history__box {
-        min-height: 310px;
-    }
+
+@media (max-width: 550px) {
+  .history__box {
+  width: calc(100% + 80px);
+  }
+}
+
+@media (max-width: 768px) {
+.history__box {
+  width: calc(100% + 80px);
+  margin: 32px 0 0 -40px;
+  }
 }

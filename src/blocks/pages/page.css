@@ -1,9 +1,7 @@
 .page {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: 'roboto-regular';
-    color: black;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
+  font-family: 'roboto-regular';
+  color: black;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }

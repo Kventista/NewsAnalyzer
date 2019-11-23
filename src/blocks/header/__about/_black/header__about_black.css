@@ -2,7 +2,10 @@
   margin-left: 34px;
   color: #000;
   border-bottom: 3px solid;
+}
 
+.header__about_black:hover {
+  color: #000;
 }
 
 @media (max-width: 440px) {

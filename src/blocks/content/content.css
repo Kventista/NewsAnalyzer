@@ -2,6 +2,7 @@
 @import url('__data-title/content__data-title.css');
 @import url('__data-analytics/content__data-analytics.css');
 .content {
-    margin: 0;
-    position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }

@@ -1,5 +1,5 @@
-.chart_grid {
-    display: grid;
-    align-items: flex-end;
-    grid-template-columns: 104px 1fr;
+.chart__grid {
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 104px 1fr;
 }

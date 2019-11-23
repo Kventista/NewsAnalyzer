@@ -1,0 +1,26 @@
+.header__main_choice {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid;
+}
+
+@media (max-width: 310px) {
+  .header__main_choice {
+    padding-top: 17px;
+    padding-bottom: 12px;
+  }
+}
+
+@media all and (min-width: 310px) and (max-width: 450px) {
+.header__main_choice {
+  padding-top: 22px;
+  padding-bottom: 10px;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 768px) {
+  .header__main_choice {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}

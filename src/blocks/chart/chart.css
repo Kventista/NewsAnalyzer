@@ -8,38 +8,24 @@
 @import url('__grid-date/chart__grid-date.css');
 @import url('__grid-graph/chart_grid__graph.css');
 .chart {
-    position: relative;
-    padding-left: 104px;
-    padding-right: 104px;
-    padding-top: 80px;
-    /*width: calc(100% - 208px);*/
-    background: #f5f6f7;
+  position: relative;
+  padding-left: 104px;
+  padding-right: 104px;
+  padding-top: 80px;
+  background: #f5f6f7;
 }
 
-.chart::before {
-    content: "";
-    height: 100%;
-    width: 100vw;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    position: absolute;
-    background-color: #f5f6f7;
-}
 
 @media (max-width: 440px) {
-    .chart {
-        padding: 24px 16px 14px;
-        width: calc(100% - 32px);
-    }
+  .chart {
+    padding: 24px 16px 14px;
+    width: calc(100% - 32px);
+  }
 }
 
 @media all and (min-width: 440px) and(max-width: 768px) {
-    .chart {
-        padding: 40px;
-        width: calc(100% - 80px);
-    }
+  .chart {
+    padding: 40px;
+    width: calc(100% - 80px);
+  }
 }
