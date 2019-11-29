@@ -1,0 +1,26 @@
+.background {
+  position: relative;
+}
+.background::before {
+  background: url('../../images/phone.png') no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-position: center 0;
+}
+
+@media (max-width: 1440px) {
+  .background {
+    background: url('../../images/phone.png') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+  }
+}

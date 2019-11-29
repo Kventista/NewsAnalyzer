@@ -1,0 +1,31 @@
+@import url('__title/chart__title.css');
+@import url('__box/chart__box.css');
+@import url('__box-mention/chart__box-mention.css');
+@import url('__container/chart__container.css');
+@import url('__division/chart__division.css');
+@import url('__division-perc/chart__division-perc.css');
+@import url('__grid/chart__grid.css');
+@import url('__grid-date/chart__grid-date.css');
+@import url('__grid-graph/chart_grid__graph.css');
+.chart {
+  position: relative;
+  padding-left: 104px;
+  padding-right: 104px;
+  padding-top: 80px;
+  background: #f5f6f7;
+}
+
+
+@media (max-width: 440px) {
+  .chart {
+    padding: 24px 16px 14px;
+    width: calc(100% - 32px);
+  }
+}
+
+@media all and (min-width: 440px) and(max-width: 768px) {
+  .chart {
+    padding: 40px;
+    width: calc(100% - 80px);
+  }
+}

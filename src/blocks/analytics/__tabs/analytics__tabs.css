@@ -1,0 +1,11 @@
+.analytics__tabs {
+    font-size: 1.12rem;
+    line-height: 1.3;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 440px) {
+    .analytics__tabs {
+        display: none;
+    }
+}

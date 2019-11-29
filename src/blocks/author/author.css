@@ -1,0 +1,29 @@
+@import url('__photo-frame/author__photo-frame.css');
+@import url('__photo/author__photo.css');
+@import url('__text/author__text.css');
+@import url('__p/author__p.css');
+@import url('__title/author__title.css');
+.author {
+    display: flex;
+    padding: 80px 104px;
+}
+
+@media (max-width: 440px) {
+    .author {
+        padding: 20px 16px 44px;
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width: 441px) and (max-width: 550px) {
+    .author {
+        padding: 40px;
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width: 551px) and (max-width: 950px) {
+    .author {
+        padding: 40px;
+    }
+}

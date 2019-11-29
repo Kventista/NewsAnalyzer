@@ -1,0 +1,27 @@
+.header__menu_notchoice {
+  color: #b6bcbf;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+
+@media (max-width: 450px) {
+  .header__menu_notchoice {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media all and (min-width: 310px) and (max-width: 450px) {
+.header__menu_notchoice {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 768px) {
+  .header__menu_notchoice {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

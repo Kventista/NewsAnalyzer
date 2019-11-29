@@ -1,0 +1,27 @@
+.cards__button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 20px 84px;
+    color: #1a1b22;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(14, 26, 57, .2);
+}
+
+.cards__button:hover {
+    background: #ededed;
+}
+
+@media (max-width: 440px) {
+    .cards__button {
+        padding: 16px 84px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .cards__button {
+        padding: 15px 60px 17px;
+    }
+}

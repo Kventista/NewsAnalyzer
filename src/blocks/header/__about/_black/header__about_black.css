@@ -1,0 +1,29 @@
+.header__about_black {
+  margin-left: 34px;
+  color: #000;
+  border-bottom: 3px solid;
+}
+
+.header__about_black:hover {
+  color: #000;
+}
+
+@media (max-width: 440px) {
+  .header__about_black {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-left: 0px;
+  }
+}
+
+@media all and (min-width: 441px) and (max-width: 500px) {
+  .header__about_black {
+      padding-bottom: 19px;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 768px) {
+  .header__about_black {
+      padding-bottom: 18px;
+  }
+}

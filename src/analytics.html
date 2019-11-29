@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ксения Макарова">
+  <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
+  <link rel="icon" href="<%=require('../src/images/logo.png')%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <title>NewsAnalyzer</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="content">
+      <header class="header header__stripe-black content">
+        <a class="header__logo black-theme" href="./index.html">NewsAnalyzer</a>
+        <nav class="header__menu header__menu_notchoice">
+          <a class="header__main header__main_black" href="./index.html">Главная</a>
+          <a class="header__about" href="./about-project.html">О проекте</a>
+        </nav>
+      </header>
+    </div>
+
+    <main class="content">
+      <section class="analytics">
+        <div class="analytics__tabs">
+          <a class="analytics__tabs-main" href="./index.html">Главная</a>
+          <span class="analytics__tabs-current">/ Аналитика</span>
+        </div>
+        <h1 class="analytics__title">Вы спросили: « »</h1>
+        <div class="analytics__news">
+          <p class="analytics__news-meaning">Новостей за неделю:</p>
+          <span class="meaning">1234</span>
+        </div>
+        <div class="analytics__news">
+          <p class="analytics__news-meaning">Упоминаний в заголовках:</p>
+          <span class="meaning">21</span>
+        </div>
+      </section>
+
+      <section class="chart">
+        <h2 class="chart__title">Аналитика по дням</h2>
+        <div class="chart__box">
+          <p class="chart__box-mention">дата</p>
+          <p class="chart__box-mention">кол-во упоминаний</p>
+        </div>
+        <div class="chart__container">
+          <div class="chart__division">
+            <div class="chart__division-perc">0</div>
+            <div class="chart__division-perc">25</div>
+            <div class="chart__division-perc">50</div>
+            <div class="chart__division-perc">75</div>
+            <div class="chart__division-perc">100</div>
+          </div>
+          <div class="chart__grid">
+            <p class="chart__grid-date">19, пн</p>
+            <div class="chart__grid-graph">54</div>
+            <p class="chart__grid-date">20, вт</p>
+            <div class="chart__grid-graph">16</div>
+            <p class="chart__grid-date">21, ср</p>
+            <div class="chart__grid-graph">80</div>
+            <p class="chart__grid-date">22, чт</p>
+            <div class="chart__grid-graph">14</div>
+            <p class="chart__grid-date">23, пт</p>
+            <div class="chart__grid-graph">100</div>
+            <p class="chart__grid-date">24, сб</p>
+            <div class="chart__grid-graph">73</div>
+            <p class="chart__grid-date">25, вс</p>
+            <div class="chart__grid-graph">34</div>
+          </div>
+          <div class="chart__division">
+            <div class="chart__division-perc">0</div>
+            <div class="chart__division-perc">25</div>
+            <div class="chart__division-perc">50</div>
+            <div class="chart__division-perc">75</div>
+            <div class="chart__division-perc">100</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer content">
+      <span class="footer__cp">&#169; 2019 Kventista</span>
+      <nav class="footer__box">
+        <a class="footer__link" href="./index.html">Главная</a>
+        <a class="footer__link" href="./about-project.html">О проекте</a>
+        <a class="footer__link" href="https://praktikum.yandex.ru">Я.Практикум</a>
+      </nav>
+      <div class="footer__boxfav">
+        <a class="footer__icon" href="https://github.com">
+          <img src="<%=require('./images/github.svg')%>" alt="git-logo">
+        </a>
+        <a class="footer__icon" href="https://vk.com/kventista">
+          <img src="<%=require('./images/vk.png')%>" alt="git-logo">
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

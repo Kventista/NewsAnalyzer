@@ -1,0 +1,22 @@
+.search__title {
+    font-family: 'robotoslab';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 64px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+}
+
+@media (max-width: 440px) {
+    .search__title {
+        margin-bottom: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search__title {
+        font-size: 2.25rem;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+}

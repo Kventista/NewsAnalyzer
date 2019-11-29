@@ -1,0 +1,21 @@
+.client__title {
+    margin-top: 24px;
+    font-family: 'robotoslab';
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.15;
+}
+
+@media (max-width: 440px) {
+    .client__title {
+        line-height: 1.33;
+    }
+}
+
+@media (max-width: 768px) {
+    .client__title {
+        font-size: 1.87rem;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }
+}

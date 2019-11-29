@@ -1,0 +1,35 @@
+@import url('__stripe-white/header__stripe-white.css');
+@import url('__stripe-black/header__stripe-black.css');
+@import url('../theme/black-theme.css');
+@import url('../theme/white-theme.css');
+@import url('__logo/header__logo.css');
+@import url('__menu/header__menu.css');
+@import url('__menu/_notchoice/header__menu_notchoice.css');
+@import url('__about/header__about.css');
+@import url('__main/header__main.css');
+@import url('__main/_black/header__main_black.css');
+@import url('__main/_choice/header__main_choice.css');
+@import url('__about/_black/header__about_black.css');
+@import url('__about/_choice/header__about_choice.css');
+.header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 104px;
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 440px) {
+  .header {
+    height: 55px;
+    padding: 0 16px;
+  }
+}
+
+@media all and (min-width: 441px) and (max-width: 768px) {
+  .header {
+    padding: 0 40px;
+    height: 63px;
+  }
+}

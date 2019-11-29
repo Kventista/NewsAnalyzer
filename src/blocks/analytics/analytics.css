@@ -1,0 +1,22 @@
+@import url('__tabs/analytics__tabs.css');
+@import url('__tabs-main/analytics__tabs-main.css');
+@import url('__tabs-current/analytics__tabs-current.css');
+@import url('__title/analytics__title.css');
+@import url('__news/analytics__news.css');
+@import url('__news-meaning/analytics__news-meaning.css');
+@import url('../analytics/meaning.css');
+.analytics {
+    padding: 40px 104px 80px;
+}
+
+@media (max-width: 440px) {
+    .analytics {
+        padding: 16px 16px 24px;
+    }
+}
+
+@media all and (min-width: 440px) and (max-width: 768px) {
+    .analytics {
+        padding: 32px 40px 40px;
+    }
+}

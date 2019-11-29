@@ -1,0 +1,22 @@
+.carousel-cell__title {
+    color: #1a1b22;
+    margin: 0 0 16px;
+    font-family: 'robotoslab';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+@media (max-width: 399px) {
+    .carousel-cell__title {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .carousel-cell__title {
+        margin: 0 0 10px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+}

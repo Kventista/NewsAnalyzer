@@ -1,0 +1,5 @@
+.chart__grid {
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 104px 1fr;
+}

@@ -1,0 +1,14 @@
+.author__p {
+    font-family: 'roboto-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: #1a1b22;
+}
+
+@media (max-width: 950px) {
+    .author__p {
+        margin: 0;
+    }
+}

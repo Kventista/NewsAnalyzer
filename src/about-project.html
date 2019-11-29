@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ксения Макарова">
+  <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
+  <link rel="icon" href="<%=require('../src/images/logo.png')%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <title>NewsAnalyzer</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="content">
+      <header class="header header__stripe-black">
+        <a class="header__logo black-theme" href="./index.html">NewsAnalyzer</a>
+        <nav class="header__menu">
+          <a class="header__main header__main_black" href="./index.html">Главная</a>
+          <a class="header__about header__about_black header__about_choice" href="./about-project.html">О проекте</a>
+        </nav>
+      </header>
+    </div>
+
+    <main class="content">
+      <section class="client">
+        <h1 class="client__title">Клиентам</h1>
+        <p class="client__p">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился
+          студент, и какими технологиями владеет.</p>
+        <p class="client__p">Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме
+          того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим
+          методологиям. Также сайт проще и дешевле
+          поддерживать.
+        </p>
+        <p class="client__p">Карточки с новостям приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает
+          работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+        <p class="client__p">При создании проекта была использована сборка технологией Webpack. Это современный подход к
+          разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
+          браузерах. Даже если посетители — пользователи
+          старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.
+        </p>
+        <p class="client__p">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы
+          рекомендуем обратиться к этому студенту.</p>
+      </section>
+
+      <section class="technologies">
+        <h2 class="technologies__title">Используемые технологии</h2>
+        <div class="technologies__box">
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">HTML</h3>
+            <img class=" technologies__item-image" src="<%=require('./images/html-icon.png')%>" alt="применен HTML5">
+          </div>
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">CSS</h3>
+            <img class=" technologies__item-image" src="<%=require('./images/css-icon.png')%>" alt="применен CSS 3.0">
+          </div>
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">Java Script</h3>
+            <img class=" technologies__item-image" src="<%=require('./images/js-icon.png')%>" alt="применен JS ES6">
+          </div>
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">Webpack</h3>
+            <img class=" technologies__item-image" src="<%=require('./images/wp-icon.png')%>"
+              alt="применен Webpack сборщик">
+          </div>
+        </div>
+      </section>
+
+      <section class="author">
+        <div class="author__photo-frame">
+          <img class="author__photo" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="фото автора">
+        </div>
+        <div class="author__text">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__p">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски
+            нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к
+            автономной реальности, нацеленность
+            на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления
+            знаний о внешней тексту действительности. В лингвистике термин текст используется в широком значении,
+            включая и образцы
+            устной речи. Восприятие текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И.
+            Р. Гальперин определяет текст следующим образом: «это письменное сообщение, объективированное в виде
+            письменного документа.
+        </div>
+      </section>
+      <section class="history">
+        <div class="content__data">
+          <h2 class="content__data-title">История коммитов из GitHub</h2>
+          <a href="https://github.com/Kventista/NewsAnalyzer/commits/level-1" class="content__data-analytics">Открыть в
+            GitHub &gt;</a>
+        </div>
+
+        <div class="history__box">
+          <!--Подключили flickity плагин-->
+          <div class="flickity">
+            <!--Создали структуру ячеек-->
+            <div class="carousel-cell">
+              <div class="carousel-cell__box">
+                <p class="carousel-cell__date">5 февраля, 2019</p>
+                <div class="carousel-cell__info">
+                  <img class="carousel-cell__avatar" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="avatar">
+                  <div class="carousel-cell__user">
+                    <h2 class="carousel-cell__title">My great commit 1</h2>
+                    <p class="carousel-cell__mail">r-168@ya.ru</p>
+                  </div>
+                </div>
+                <p class="carousel-cell__text">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка
+                  гримируют бойцовскую кровь.</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="carousel-cell__box">
+                <p class="carousel-cell__date">5 февраля, 2019</p>
+                <div class="carousel-cell__info">
+                  <img class="carousel-cell__avatar" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="avatar">
+                  <div class="carousel-cell__user">
+                    <h2 class="carousel-cell__title">My great commit 2</h2>
+                    <p class="carousel-cell__mail">r-168@ya.ru</p>
+                  </div>
+                </div>
+                <p class="carousel-cell__text">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка
+                  гримируют бойцовскую кровь.</p>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="carousel-cell__box">
+                <p class="carousel-cell__date">5 февраля, 2019</p>
+                <div class="carousel-cell__info">
+                  <img class="carousel-cell__avatar" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="avatar">
+                  <div class="carousel-cell__user">
+                    <h2 class="carousel-cell__title">My great commit 3</h2>
+                    <p class="carousel-cell__mail">r-168@ya.ru</p>
+                  </div>
+                </div>
+                <p class="carousel-cell__text">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка
+                  гримируют бойцовскую кровь.</p>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="carousel-cell__box">
+                <p class="carousel-cell__date">5 февраля, 2019</p>
+                <div class="carousel-cell__info">
+                  <img class="carousel-cell__avatar" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="avatar">
+                  <div class="carousel-cell__user">
+                    <h2 class="carousel-cell__title">My great commit 4</h2>
+                    <p class="carousel-cell__mail">r-168@ya.ru</p>
+                  </div>
+                </div>
+                <p class="carousel-cell__text">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка
+                  гримируют бойцовскую кровь.</p>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="carousel-cell__box">
+                <p class="carousel-cell__date">5 февраля, 2019</p>
+                <div class="carousel-cell__info">
+                  <img class="carousel-cell__avatar" src="<%=require('./images/i0FITOk1xjg.jpg')%>" alt="avatar">
+                  <div class="carousel-cell__user">
+                    <h2 class="carousel-cell__title">My great commit 5</h2>
+                    <p class="carousel-cell__mail">r-168@ya.ru</p>
+                  </div>
+                </div>
+                <p class="carousel-cell__text">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка
+                  гримируют бойцовскую кровь.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer content">
+      <span class="footer__cp">&#169; 2019 Kventista</span>
+      <nav class="footer__box">
+        <a class="footer__link" href="./index.html">Главная</a>
+        <a class="footer__link" href="./about-project.html">О проекте</a>
+        <a class="footer__link" href="https://praktikum.yandex.ru">Я.Практикум</a>
+      </nav>
+      <div class="footer__boxfav">
+        <a class="footer__icon" href="https://github.com">
+          <img src="<%=require('./images/github.svg')%>" alt="git-logo">
+        </a>
+        <a class="footer__icon" href="https://vk.com/kventista">
+          <img src="<%=require('./images/vk.png')%>" alt="git-logo">
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@import url('__box/cards__box.css');
+@import url('__item/cards__item.css');
+@import url('__result-wrap/cards__result-wrap.css');
+@import url('__result-image/cards__result-image.css');
+@import url('__date/cards__date.css');
+@import url('__subtitle/cards__subtitle.css');
+@import url('__description/cards__description.css');
+@import url('__source/cards__source.css');
+@import url('__button/cards__button.css');
+@import url('../link/a.css');
+.cards {
+    padding: 80px 104px;
+    background-color: #f5f6f7;
+    position: relative;
+}
+
+@media all and (max-width: 449px) {
+    .cards {
+        padding: 32px 16px 44px;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width: 950px) {
+    .cards {
+        padding: 40px;
+    }
+}

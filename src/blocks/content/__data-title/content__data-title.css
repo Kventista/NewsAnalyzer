@@ -1,0 +1,23 @@
+.content__data-title {
+    font-family: 'robotoslab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: #1a1b22;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .content__data-title {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .content__data-title {
+        font-size: 1.87rem;
+        line-height: 1.13;
+        padding-right: 32px;
+    }
+}

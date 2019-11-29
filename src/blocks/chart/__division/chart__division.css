@@ -1,0 +1,6 @@
+.chart__division {
+    position: relative;
+    margin-left: 104px;
+    display: grid;
+    grid-template-areas: ". . . . .";
+}

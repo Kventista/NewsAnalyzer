@@ -1,0 +1,8 @@
+.carousel-cell__avatar {
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,8 @@
+@import url('__data/content__data.css');
+@import url('__data-title/content__data-title.css');
+@import url('__data-analytics/content__data-analytics.css');
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}

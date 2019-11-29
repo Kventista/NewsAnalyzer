@@ -1,0 +1,5 @@
+.chart__box {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 104px 1fr;
+}
