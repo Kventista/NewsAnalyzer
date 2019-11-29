@@ -6,6 +6,7 @@
 @import url('../blocks/technologies/technologies.css');
 @import url('../blocks/author/author.css');
 @import url('../blocks/history/history.css');
+@import url('../blocks/server-err/server-err.css');
 @import url('../vendor/flickity.css');
 @import url('../blocks/footer/footer.css');
 @import url('../fonts/fonts.css');

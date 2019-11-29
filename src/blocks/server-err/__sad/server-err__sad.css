@@ -1,0 +1,7 @@
+.server-err__sad {
+/*background-image: url(../../images/sad.png);*/
+background-size: contain;
+background-repeat: no-repeat;
+height: 96px;
+width: 96px;
+}

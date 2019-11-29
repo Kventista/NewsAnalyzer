@@ -1,8 +1,17 @@
 .loader__round {
-  /*background-image: url(../../images/circle.png);*/
+  background-image: url(../../../images/loading_small.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 74px;
   height: 74px;
-  animation: spin .75s linear infinite;
+  animation: rotation .75s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
 }
