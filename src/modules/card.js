@@ -1,6 +1,6 @@
 export default class Card {
   constructor(newsItem) {
-    this.Element = this.createElement(newsItem);
+    this.element = this.createElement(newsItem);
   }
 
   createElement(newsItem) {

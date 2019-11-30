@@ -11,46 +11,62 @@ const cardBox = document.querySelector('.cards__box');
 const moreButton = document.querySelector('.cards__button');
 const cardsSection = document.querySelector('.cards');
 const serverError = document.querySelector('.server-err');
+const searchField = document.querySelector('.search__field');
 
-const news = new NewsApi('https://newsapi.org/v2/everything?');
+const newsApiToken = 'b4311048808a4f1f9e06934c2bf1b51c';
+const news = new NewsApi('https://newsapi.org/v2/everything?', newsApiToken);
 const cardList = new CardList(cardBox);
-const helper = new Helper();
 const today = new Date();
-const weekAgo = new Date();
+const milisecondsInWeek = 60*60*24*7*1000;
+const weekAgo = new Date(today.getTime()-milisecondsInWeek);
+const resultsPerLine = 3;
+
+
+function showNews(res) {
+  Helper.showElements(cardsSection);
+  Helper.showElementsGrid(cardBox);
+  Helper.hideElements(nothing);
+  cardList.clear();
+  res.articles.forEach(article => {
+    const story = new Card(article);
+    cardList.allNews.push(story);
+  });
+  cardList.init();
+  if (res.totalResults > resultsPerLine) {
+    Helper.showElements(moreButton);
+  }
+}
+
+if (localStorage.getItem('res') != null && JSON.parse(localStorage.getItem('res')).totalResults > 0)
+{
+  const res =  JSON.parse(localStorage.getItem('res'));
+  showNews(res);
+}
 
 form.addEventListener('submit', (event)=> {
   event.preventDefault();
-  helper.showElementsFlex(loader);
-  helper.hideElements(nothing, cardsSection, moreButton, serverError);
-  weekAgo.setDate(today.getDate() - 6);
+  Helper.showElementsFlex(loader);
+  Helper.hideElements(nothing, cardsSection, moreButton, serverError);
+  Helper.disableField(searchField);
   cardList.clear();
-  news.getCards(weekAgo.toISOString(), today.toISOString(), event.target.elements['search-field'].value)
-      .then(res => {
-        helper.hideElements(loader);
-        localStorage.setItem('res', JSON.stringify(res));
-        localStorage.setItem('req', event.target.elements['search-field'].value);
 
+  news.getCards(weekAgo.toISOString(), today.toISOString(), searchField.value)
+      .then(res => {
+        Helper.enableField(searchField);
+        Helper.hideElements(loader);
+        localStorage.setItem('res', JSON.stringify(res));
+        localStorage.setItem('request', searchField.value);
         if (res.totalResults > 0) {
-          helper.showElements(cardsSection);
-          helper.showElementsGrid(cardBox);
-          helper.hideElements(nothing);
-          cardList.clear();
-          res.articles.forEach(article => {
-            let story = new Card(article);
-            cardList.allNews.push(story);
-          });
-          cardList.init();
-          if (res.totalResults > 3) {
-            helper.showElements(moreButton);
-          }
+         showNews(res);
         } else {
-            helper.showElementsFlex(nothing);
-            helper.hideElements(cardBox);
+          Helper.showElementsFlex(nothing);
+          Helper.hideElements(cardBox);
         }
       })
       .catch((err) => {
-        helper.showElementsFlex(serverError);
-        helper.hideElements(nothing, cardsSection, moreButton, loader);
+         Helper.enableField(searchField);
+         Helper.showElementsFlex(serverError);
+         Helper.hideElements(nothing, cardsSection, moreButton, loader);
       });
 
 });
@@ -58,6 +74,6 @@ form.addEventListener('submit', (event)=> {
 moreButton.addEventListener('click', (event)=> {
   cardList.showNext();
   if (cardList.lastIndex >= cardList.allNews.length) {
-    helper.hideElements(moreButton);
+    Helper.hideElements(moreButton);
   }
 });

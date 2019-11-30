@@ -11,9 +11,9 @@ const flkty = new Flickity('.flickity', {
     wrapAround: true,
 });
 const gitApi = new GitApi('https://api.github.com/repos/Kventista/NewsAnalyzer/commits');
-const helper = new Helper();
 const serverError = document.querySelector('.server-err');
 const section = document.querySelector('.history');
+const loader = document.querySelector('.loader');
 
 function makeCommitCell(item) {
 
@@ -55,21 +55,22 @@ function makeCommitCell(item) {
   cellText.classList.add('carousel-cell__text');
   cellText.textContent = item.commit.message;
   cellBox.appendChild(cellText);
-
   return cell;
 }
 
+Helper.showElementsFlex(loader);
+Helper.hideElements(serverError);
 gitApi.getCards()
         .then(res => {
-          let cells = [];
-          helper.showElements(section);
-          helper.hideElements(serverError);
+          const cells = [];
+          Helper.hideElements(loader);
+          Helper.showElements(section);
           res.forEach(commit => {
             cells.push(makeCommitCell(commit));
           });
           flkty.append(cells);
         })      
         .catch((err) => {
-          helper.hideElements(section);
-          helper.showElementsFlex(serverError);
+          Helper.hideElements(section);
+          Helper.showElementsFlex(serverError);
         });

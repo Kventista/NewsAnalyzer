@@ -1,26 +1,34 @@
 export default class Helper {
     
-  showElements(...args) {
+  static showElements(...args) {
     args.forEach(element => {
       element.style='display: block;';
     });
   }
 
-  showElementsGrid(...args) {
+  static showElementsGrid(...args) {
     args.forEach(element => {
       element.style='display: grid;';
     });
   }
 
-  showElementsFlex(...args) {
+  static showElementsFlex(...args) {
     args.forEach(element => {
       element.style='display: flex;';
     });
   }
 
-  hideElements(...args) {
+  static hideElements(...args) {
     args.forEach(element => {
       element.style='display: none';
     });
+  }
+
+  static disableField(field) {
+    field.disabled=true;
+  }
+
+  static enableField(field) {
+    field.disabled=false;
   }
 }
