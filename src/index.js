@@ -47,24 +47,25 @@ form.addEventListener('submit', (event)=> {
   event.preventDefault();
   Helper.showElementsFlex(loader);
   Helper.hideElements(nothing, cardsSection, moreButton, serverError);
-  Helper.disableField(searchField);
+  Helper.disableFields(searchField);
   cardList.clear();
 
   news.getCards(weekAgo.toISOString(), today.toISOString(), searchField.value)
       .then(res => {
-        Helper.enableField(searchField);
+        Helper.enableFields(searchField);
         Helper.hideElements(loader);
         localStorage.setItem('res', JSON.stringify(res));
         localStorage.setItem('request', searchField.value);
         if (res.totalResults > 0) {
-         showNews(res);
+          showNews(res);
         } else {
           Helper.showElementsFlex(nothing);
           Helper.hideElements(cardBox);
         }
       })
       .catch((err) => {
-         Helper.enableField(searchField);
+         console.log(err);
+         Helper.enableFields(searchField);
          Helper.showElementsFlex(serverError);
          Helper.hideElements(nothing, cardsSection, moreButton, loader);
       });
