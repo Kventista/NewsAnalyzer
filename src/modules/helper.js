@@ -24,11 +24,15 @@ export default class Helper {
     });
   }
 
-  static disableField(field) {
-    field.disabled=true;
+  static disableFields(...args) {
+    args.forEach(field => {
+      field.disabled=true;
+    });
   }
 
-  static enableField(field) {
-    field.disabled=false;
-  }
+  static enableFields(...args) {
+    args.forEach(field => {
+      field.disabled=false;
+    });
+    }
 }
