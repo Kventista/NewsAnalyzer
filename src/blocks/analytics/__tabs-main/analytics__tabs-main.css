@@ -1,3 +1,7 @@
 .analytics__tabs-main {
     color: #000;
 }
+
+.analytics__tabs-main:hover {
+  color: #b6bcbf;
+}

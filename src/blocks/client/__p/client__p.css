@@ -1,6 +1,6 @@
 .client__p {
     margin: 24px 0 0;
-    font-family: 'roboto-regular';
+    font-family: 'roboto-regular', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.12rem;
     line-height: 24px;

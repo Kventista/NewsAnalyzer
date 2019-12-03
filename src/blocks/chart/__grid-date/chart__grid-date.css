@@ -3,7 +3,7 @@
     width: 104px;
     text-align: start;
     flex-shrink: 0;
-    font-family: 'roboto-regular';
+    font-family: 'roboto-regular', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

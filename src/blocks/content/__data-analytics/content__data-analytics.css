@@ -1,5 +1,5 @@
 .content__data-analytics {
-  font-family: 'roboto-medium';
+  font-family: 'roboto-medium', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -8,7 +8,6 @@
   /*display: none;*/
 }
 
-@media (max-width: 440px) {
-    .content__data-analytics {
-    }
+.content__data-analytics:hover {
+  color: #989a9b;
 }

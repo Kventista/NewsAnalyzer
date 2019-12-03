@@ -9,7 +9,6 @@
   <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
   <link rel="icon" href="<%=require('../src/images/logo.png')%>">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
-  <link rel="stylesheet" href="vendor/normalize.css">
   <title>NewsAnalyzer</title>
 </head>
 
@@ -17,10 +16,10 @@
   <div class="page">
     <div class="content">
       <header class="header header_stripe-black content">
-        <a class="header__logo black-theme" href="./index.html">NewsAnalyzer</a>
+        <a class="link header__logo black-theme" href="./index.html">NewsAnalyzer</a>
         <nav class="header__menu header__menu_notchoice">
-          <a class="header__main header__main_black" href="./index.html">Главная</a>
-          <a class="header__about" href="./about-project.html">О проекте</a>
+          <a class="link header__main header__main_black" href="./index.html">Главная</a>
+          <a class="link header__about" href="./about-project.html">О проекте</a>
         </nav>
       </header>
     </div>
@@ -28,7 +27,7 @@
     <main class="content">
       <section class="analytics">
         <div class="analytics__tabs">
-          <a class="analytics__tabs-main" href="./index.html">Главная</a>
+          <a class="link analytics__tabs-main" href="./index.html">Главная</a>
           <span class="analytics__tabs-current">/ Аналитика</span>
         </div>
         <h1 class="analytics__title">Вы спросили: « »</h1>
@@ -91,15 +90,15 @@
     <footer class="footer content">
       <span class="footer__cp">&#169; 2019 Kventista</span>
       <nav class="footer__box">
-        <a class="footer__link" href="./index.html">Главная</a>
-        <a class="footer__link" href="./about-project.html">О проекте</a>
-        <a class="footer__link" href="https://praktikum.yandex.ru">Я.Практикум</a>
+        <a class="link footer__link" href="./index.html">Главная</a>
+        <a class="link footer__link" href="./about-project.html">О проекте</a>
+        <a class="link footer__link" href="https://praktikum.yandex.ru">Я.Практикум</a>
       </nav>
       <div class="footer__boxfav">
-        <a class="footer__icon" href="https://github.com">
+        <a class="link footer__icon" href="https://github.com">
           <img src="<%=require('./images/github.svg')%>" alt="git-logo">
         </a>
-        <a class="footer__icon" href="https://vk.com/kventista">
+        <a class="link footer__icon" href="https://vk.com/kventista">
           <img src="<%=require('./images/vk.png')%>" alt="git-logo">
         </a>
       </div>

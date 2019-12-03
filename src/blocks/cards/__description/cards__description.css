@@ -1,6 +1,6 @@
 .cards__description {
     margin: 0 0 16px;
-    font-family: 'robotoslab';
+    font-family: 'robotoslab', Arial, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.37;

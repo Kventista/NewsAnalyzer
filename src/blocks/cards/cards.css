@@ -7,7 +7,7 @@
 @import url('__description/cards__description.css');
 @import url('__source/cards__source.css');
 @import url('__button/cards__button.css');
-@import url('../link/a.css');
+@import url('../link/link.css');
 .cards {
     padding: 80px 104px;
     background-color: #f5f6f7;
