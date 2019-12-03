@@ -1,5 +1,5 @@
-import "./css/analytics.css";
-import Helper from './modules/helper';
+import "./analytics.css";
+import Helper from '../../modules/helper';
 
 
 const title = document.querySelector('.analytics__title');

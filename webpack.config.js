@@ -10,13 +10,13 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        about: './src/about-project.js',
-        analytics: './src/analytics.js',
+        main: './src/pages/index/index.js',
+        about: './src/pages/about/about-project.js',
+        analytics: './src/pages/analytics/analytics.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
+        filename: 'pages/[name]/[name].[chunkhash].js'
     },
     module: {
         rules: [{ // тут описываются правила
@@ -25,8 +25,18 @@ module.exports = {
                 use: { loader: 'babel-loader' } // весь JS обрабатывается пакетом babel-loader
             },
             {
-                test: /\.css$/, // применять это правило только к CSS-файлам
-                use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader'] // добавили минификацию CSS
+              test: /\.css$/i,
+              use: [
+                  (isDev ? 'style-loader' : 
+                  {
+                  loader: MiniCssExtractPlugin.loader,
+                      options: {
+                          publicPath: '../../',
+                      }
+                  }),
+                  'css-loader', 
+                  'postcss-loader'
+              ] // добавили минификацию CSS
             },
             {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
@@ -52,7 +62,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({ // 
-            filename: './[name].[contenthash].css'
+            filename: 'pages/[name]/[name].[contenthash].css'
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
@@ -65,19 +75,19 @@ module.exports = {
         new HtmlWebpackPlugin({
             // Означает, что:
             inject: false, // стили НЕ нужно прописывать внутри тегов
-            template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
+            template: './src/pages/index/index.html', // откуда брать образец для сравнения с текущим видом проекта
             filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/about-project.html',
+            template: './src/pages/about/about-project.html',
             filename: 'about-project.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/analytics.html',
+            template: './src/pages/analytics/analytics.html',
             filename: 'analytics.html'
         }),
         new webpack.DefinePlugin({

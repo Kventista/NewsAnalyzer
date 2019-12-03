@@ -1,8 +1,8 @@
-import "./css/index.css";
-import NewsApi from './modules/newsApi';
-import CardList from './modules/cardList';
-import Card from './modules/card';
-import Helper from './modules/helper';
+import "./index.css";
+import NewsApi from '../../modules/newsApi';
+import CardList from '../../modules/cardList';
+import Card from '../../modules/card';
+import Helper from '../../modules/helper';
 
 const form = document.forms.search;
 const loader = document.querySelector('.loader');

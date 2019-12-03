@@ -1,7 +1,7 @@
-import "./css/about-project.css";
-import "./vendor/flickity.css";
-import GitApi from './modules/gitApi';
-import Helper from './modules/helper';
+import "./about-project.css";
+import "../../vendor/flickity.css";
+import GitApi from '../../modules/gitApi';
+import Helper from '../../modules/helper';
 
 const Flickity = require('flickity');
 const flkty = new Flickity('.flickity', {
