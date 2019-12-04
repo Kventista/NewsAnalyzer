@@ -1,4 +1,4 @@
-.chart__grid-graph {
+.chart__grid-column {
     color: #fff;
     background-color: #2f71e5;
     text-indent: 6px;
@@ -10,6 +10,6 @@
     width: 0;
 }
 
-.chart__grid-graph:nth-child(2) {
+.chart__grid-column:nth-child(2) {
     margin-top: 44px;
 }

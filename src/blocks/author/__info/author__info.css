@@ -1,4 +1,4 @@
-.author__p {
+.author__info {
     font-family: 'roboto-regular', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 950px) {
-    .author__p {
+    .author__info {
         margin: 0;
     }
 }

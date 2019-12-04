@@ -12,6 +12,7 @@
     padding: 80px 104px;
     background-color: #f5f6f7;
     position: relative;
+    display: none;
 }
 
 @media all and (max-width: 449px) {

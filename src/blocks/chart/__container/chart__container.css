@@ -1,5 +1,5 @@
 .chart__container {
-    border-top: 1px solid #000;
-    box-sizing: padding-box;
-    padding-bottom: 98px;
+  border-top: solid black 1px;
+  box-sizing: padding-box;
+  padding-bottom: 114px;
 }

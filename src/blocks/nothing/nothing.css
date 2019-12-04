@@ -1,6 +1,6 @@
-@import url('__sad/nothing__sad.css');
+@import url('__art/nothing__art.css');
 @import url('__title/nothing__title.css');
-/*@import url('__subtitle/nothing__subtitle.css/');*/
+/*@import url('__text/nothing__text.css/');*/
 .nothing {
   display: flex;
   flex-direction: column;

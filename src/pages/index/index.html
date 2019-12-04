@@ -25,10 +25,10 @@
 
       <section class="search">
         <h1 class="search__title">Что в мире творится?</h1>
-        <p class="search__subtitle">Введите в поиске любую тему и узнайте насколько популярной она была в новостях за
+        <p class="search__text">Введите в поиске любую тему и узнайте насколько популярной она была в новостях за
           прошедшую неделю</p>
         <form id="search__form" name="search">
-          <input name="search-field" type="text" class="search__field" placeholder="Введите тему новости" required />
+          <input class="search__field" name="search-field" type="text" placeholder="Введите тему новости" required />
           <button class="button search__button">Искать</button>
           <div class="search__form-err">Нужно ввести ключевое слово</div>
         </form>
@@ -41,16 +41,16 @@
         <p class="loader__text">Ищем новости...</p>
       </div>
       <div class="nothing idle">
-        <div class="nothing__sad"></div>
+        <div class="nothing__art"></div>
         <h2 class="nothing__title">Ничего не найдено</h2>
-        <p class="nothing__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+        <p class="nothing__text">К сожалению по вашему запросу ничего не найдено.</p>
       </div>
       <div class="server-err idle">
-        <div class="server-err__sad"></div>
+        <div class="server-err__art"></div>
         <h2 class="server-err__title">Ошибка :(</h2>
-        <p class="server-err__subtitle">При запросе к серверу произошла ошибка. Попробуйте повторить позже.</p>
+        <p class="server-err__text">При запросе к серверу произошла ошибка. Попробуйте повторить позже.</p>
       </div>
-      <section class="cards" style="display: none;">
+      <section class="cards">
         <div class="content__data">
           <h2 class="content__data-title">Результаты поиска</h2>
           <a class="content__data-analytics link" href="./analytics.html">Посмотреть аналитику &gt;</a>
@@ -63,12 +63,12 @@
 
 
       <section class="author">
-        <div class="author__photo-frame">
+        <div class="author__box">
           <img class="author__photo" src="<%=require('../../images/i0FITOk1xjg.jpg')%>" alt="фото автора">
         </div>
         <div class="author__text">
           <h2 class="author__title">Об авторе</h2>
-          <p class="author__p">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски
+          <p class="author__info">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски
             нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к
             автономной реальности, нацеленность
             на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления
@@ -92,7 +92,7 @@
           <img src="<%=require('../../images/github.svg')%>" alt="git-logo">
         </a>
         <a class="footer__icon link" href="https://vk.com/kventista">
-          <img src="<%=require('../../images/vk.png')%>" alt="git-logo">
+          <img src="<%=require('../../images/vk.png')%>" alt="vk-logo">
         </a>
       </div>
     </footer>

@@ -1,7 +1,7 @@
-@import url('__photo-frame/author__photo-frame.css');
+@import url('__box/author__box.css');
 @import url('__photo/author__photo.css');
 @import url('__text/author__text.css');
-@import url('__p/author__p.css');
+@import url('__info/author__info.css');
 @import url('__title/author__title.css');
 .author {
     display: flex;

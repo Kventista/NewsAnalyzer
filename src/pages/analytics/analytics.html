@@ -19,7 +19,7 @@
         <a class="link header__logo black-theme" href="./index.html">NewsAnalyzer</a>
         <nav class="header__menu header__menu_notchoice">
           <a class="link header__main header__main_black" href="./index.html">Главная</a>
-          <a class="link header__about" href="./about-project.html">О проекте</a>
+          <a class="link header__about header__about_hover" href="./about-project.html">О проекте</a>
         </nav>
       </header>
     </div>
@@ -27,17 +27,17 @@
     <main class="content">
       <section class="analytics">
         <div class="analytics__tabs">
-          <a class="link analytics__tabs-main" href="./index.html">Главная</a>
+          <a class="analytics__tabs-main link" href="./index.html">Главная</a>
           <span class="analytics__tabs-current">/ Аналитика</span>
         </div>
         <h1 class="analytics__title">Вы спросили: « »</h1>
         <div class="analytics__news">
           <p class="analytics__news-meaning">Новостей за неделю:</p>
-          <span class="analytics__news-bold monthly">1234</span>
+          <span class="analytics__news-bold monthly">подсчет..</span>
         </div>
         <div class="analytics__news">
           <p class="analytics__news-meaning">Упоминаний в заголовках:</p>
-          <span class="analytics__news-bold weekly">21</span>
+          <span class="analytics__news-bold weekly">подсчет..</span>
         </div>
       </section>
 
@@ -49,41 +49,41 @@
         </div>
         <div class="chart__container">
           <div class="chart__division">
-            <div class="chart__division-perc">0</div>
-            <div class="chart__division-perc">25</div>
-            <div class="chart__division-perc">50</div>
-            <div class="chart__division-perc">75</div>
-            <div class="chart__division-perc">100</div>
+            <div class="chart__quantity">0</div>
+            <div class="chart__quantity">25</div>
+            <div class="chart__quantity">50</div>
+            <div class="chart__quantity">75</div>
+            <div class="chart__quantity">100</div>
           </div>
           <div class="chart__grid">
             <p class="chart__grid-date">19, пн</p>
-            <div class="chart__grid-graph">54</div>
+            <div class="chart__grid-column">54</div>
             <p class="chart__grid-date">20, вт</p>
-            <div class="chart__grid-graph">16</div>
+            <div class="chart__grid-column">16</div>
             <p class="chart__grid-date">21, ср</p>
-            <div class="chart__grid-graph">80</div>
+            <div class="chart__grid-column">80</div>
             <p class="chart__grid-date">22, чт</p>
-            <div class="chart__grid-graph">14</div>
+            <div class="chart__grid-column">14</div>
             <p class="chart__grid-date">23, пт</p>
-            <div class="chart__grid-graph">100</div>
+            <div class="chart__grid-column">100</div>
             <p class="chart__grid-date">24, сб</p>
-            <div class="chart__grid-graph">73</div>
+            <div class="chart__grid-column">73</div>
             <p class="chart__grid-date">25, вс</p>
-            <div class="chart__grid-graph">34</div>
+            <div class="chart__grid-column">34</div>
           </div>
           <div class="chart__division">
-            <div class="chart__division-perc">0</div>
-            <div class="chart__division-perc">25</div>
-            <div class="chart__division-perc">50</div>
-            <div class="chart__division-perc">75</div>
-            <div class="chart__division-perc">100</div>
+            <div class="chart__quantity">0</div>
+            <div class="chart__quantity">25</div>
+            <div class="chart__quantity">50</div>
+            <div class="chart__quantity">75</div>
+            <div class="chart__quantity">100</div>
           </div>
         </div>
       </section>
       <div class="server-err idle" style="display: none;">
-        <div class="server-err__sad"></div>
+        <div class="server-err__art"></div>
         <h2 class="server-err__title">Ошибка :(</h2>
-        <p class="server-err__subtitle">Для просмотра аналитики необходимо сначала выполнить поиск по запросу.</p>
+        <p class="server-err__text">Для просмотра аналитики необходимо сначала выполнить поиск по запросу.</p>
       </div>
     </main>
 
@@ -99,7 +99,7 @@
           <img src="<%=require('../../images/github.svg')%>" alt="git-logo">
         </a>
         <a class="link footer__icon" href="https://vk.com/kventista">
-          <img src="<%=require('../../images/vk.png')%>" alt="git-logo">
+          <img src="<%=require('../../images/vk.png')%>" alt="vk-logo">
         </a>
       </div>
     </footer>
