@@ -8,8 +8,7 @@
   <meta name="author" content="Ксения Макарова">
   <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
   <link rel="icon" href="images/logo.png">
-  <link rel="stylesheet" href="./about.b7149f27ce04ab90d67e.css?087c84ed01966ebf3349">
-  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="pages/about/about.8e375109f17ef374d353.css?9bdd8ac56f64ae3815a7">
   <title>NewsAnalyzer</title>
 </head>
 
@@ -17,10 +16,11 @@
   <div class="page">
     <div class="content">
       <header class="header header_stripe-black">
-        <a class="header__logo black-theme" href="./index.html">NewsAnalyzer</a>
+        <a class="header__logo black-theme link" href="./index.html">NewsAnalyzer</a>
         <nav class="header__menu">
-          <a class="header__main header__main_black" href="./index.html">Главная</a>
-          <a class="header__about header__about_black header__about_choice" href="./about-project.html">О проекте</a>
+          <a class="header__main header__main_black link" href="./index.html">Главная</a>
+          <a class="header__about header__about_black header__about_choice link" href="./about-project.html">О
+            проекте</a>
         </nav>
       </header>
     </div>
@@ -28,21 +28,25 @@
     <main class="content">
       <section class="client">
         <h1 class="client__title">Клиентам</h1>
-        <p class="client__p">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился
+        <p class="client__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
+          научился
           студент, и какими технологиями владеет.</p>
-        <p class="client__p">Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме
+        <p class="client__text">Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+          Кроме
           того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим
           методологиям. Также сайт проще и дешевле
           поддерживать.
         </p>
-        <p class="client__p">Карточки с новостям приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает
+        <p class="client__text">Карточки с новостям приходят с сервера и обрабатываются асинхронно. То есть сайт
+          продолжает
           работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-        <p class="client__p">При создании проекта была использована сборка технологией Webpack. Это современный подход к
+        <p class="client__text">При создании проекта была использована сборка технологией Webpack. Это современный
+          подход к
           разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
           браузерах. Даже если посетители — пользователи
           старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.
         </p>
-        <p class="client__p">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы
+        <p class="client__text">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы
           рекомендуем обратиться к этому студенту.</p>
       </section>
 
@@ -51,11 +55,13 @@
         <div class="technologies__box">
           <div class="technologies__item">
             <h3 class=" technologies__item-title">HTML</h3>
-            <img class=" technologies__item-image" src="images/html-icon.png" alt="применен HTML5">
+            <img class=" technologies__item-image" src="images/html-icon.png"
+              alt="применен HTML5">
           </div>
           <div class="technologies__item">
             <h3 class=" technologies__item-title">CSS</h3>
-            <img class=" technologies__item-image" src="images/css-icon.png" alt="применен CSS 3.0">
+            <img class=" technologies__item-image" src="images/css-icon.png"
+              alt="применен CSS 3.0">
           </div>
           <div class="technologies__item">
             <h3 class=" technologies__item-title">Java Script</h3>
@@ -70,12 +76,19 @@
       </section>
 
       <section class="author">
-        <div class="author__photo-frame">
-          <img class="author__photo" src="images/i0FITOk1xjg.jpg" alt="фото автора">
+        <div class="author__box">
+          <picture>
+            <source class="author__photo" srcset="images/author600.jpg"
+              media="(min-width: 600px)">
+            <source class="author__photo" srcset="images/author320.jpg"
+              media="(min-width: 320px)">
+            <img class="author__photo" src="images/author.jpg" alt="фото автора">
+          </picture>
         </div>
         <div class="author__text">
           <h2 class="author__title">Об авторе</h2>
-          <p class="author__p">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски
+          <p class="author__info">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная,
+            философски
             нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к
             автономной реальности, нацеленность
             на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления
@@ -89,7 +102,7 @@
       <section class="history">
         <div class="content__data">
           <h2 class="content__data-title">История коммитов из GitHub</h2>
-          <a href="https://github.com/Kventista/NewsAnalyzer" class="content__data-analytics">Открыть в
+          <a href="https://github.com/Kventista/NewsAnalyzer" class="content__data-analytics link">Открыть в
             GitHub &gt;</a>
         </div>
         <div class="loader idle">
@@ -98,14 +111,13 @@
         </div>
         <div class="history__box">
           <div class="flickity">
-
           </div>
         </div>
       </section>
       <div class="server-err idle">
-        <div class="server-err__sad"></div>
+        <div class="server-err__art"></div>
         <h2 class="server-err__title">Ошибка :(</h2>
-        <p class="server-err__subtitle">При получении списка коммитов с сервера произошла ошибка. Попробуйте обновить
+        <p class="server-err__text">При получении списка коммитов с сервера произошла ошибка. Попробуйте обновить
           страницу.</p>
       </div>
     </main>
@@ -113,22 +125,22 @@
     <footer class="footer content">
       <span class="footer__cp">&#169; 2019 Kventista</span>
       <nav class="footer__box">
-        <a class="footer__link" href="./index.html">Главная</a>
-        <a class="footer__link" href="./about-project.html">О проекте</a>
-        <a class="footer__link" href="https://praktikum.yandex.ru">Я.Практикум</a>
+        <a class="footer__link link" href="./index.html">Главная</a>
+        <a class="footer__link link" href="./about-project.html">О проекте</a>
+        <a class="footer__link link" href="https://praktikum.yandex.ru">Я.Практикум</a>
       </nav>
       <div class="footer__boxfav">
-        <a class="footer__icon" href="https://github.com">
+        <a class="footer__icon link" href="https://github.com">
           <img src="images/github.svg" alt="git-logo">
         </a>
-        <a class="footer__icon" href="https://vk.com/kventista">
-          <img src="images/vk.png" alt="git-logo">
+        <a class="footer__icon link" href="https://vk.com/kventista">
+          <img src="images/vk.png" alt="vk-logo">
         </a>
       </div>
     </footer>
   </div>
 
-  <script src="about.eebf15c2d17eb47966c5.js?087c84ed01966ebf3349"></script>
+  <script src="pages/about/about.9ede811edb8a87ba472d.js?9bdd8ac56f64ae3815a7"></script>
 </body>
 
 </html>
