@@ -16,7 +16,7 @@
 <body>
   <div class="page">
     <div class="content">
-      <header class="header header__stripe-black content">
+      <header class="header header_stripe-black content">
         <a class="header__logo black-theme" href="./index.html">NewsAnalyzer</a>
         <nav class="header__menu header__menu_notchoice">
           <a class="header__main header__main_black" href="./index.html">Главная</a>
@@ -34,11 +34,11 @@
         <h1 class="analytics__title">Вы спросили: « »</h1>
         <div class="analytics__news">
           <p class="analytics__news-meaning">Новостей за неделю:</p>
-          <span class="meaning">1234</span>
+          <span class="analytics__news-bold monthly">1234</span>
         </div>
         <div class="analytics__news">
           <p class="analytics__news-meaning">Упоминаний в заголовках:</p>
-          <span class="meaning">21</span>
+          <span class="analytics__news-bold weekly">21</span>
         </div>
       </section>
 
@@ -81,6 +81,11 @@
           </div>
         </div>
       </section>
+      <div class="server-err idle" style="display: none;">
+        <div class="server-err__sad"></div>
+        <h2 class="server-err__title">Ошибка :(</h2>
+        <p class="server-err__subtitle">Для просмотра аналитики необходимо сначала выполнить поиск по запросу.</p>
+      </div>
     </main>
 
     <footer class="footer content">
@@ -102,7 +107,7 @@
 
   </div>
 
-  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 
 </html>

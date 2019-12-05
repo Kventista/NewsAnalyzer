@@ -1,0 +1,8 @@
+.search__form-err {
+  position: absolute;
+  bottom: 22px;
+  left: 212px;
+  color: red;
+  font-size: 14px;
+  display: none;
+}

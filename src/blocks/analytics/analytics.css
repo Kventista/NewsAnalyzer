@@ -4,7 +4,7 @@
 @import url('__title/analytics__title.css');
 @import url('__news/analytics__news.css');
 @import url('__news-meaning/analytics__news-meaning.css');
-@import url('../analytics/meaning.css');
+@import url('__news-bold/analytics__news-bold.css');
 .analytics {
     padding: 40px 104px 80px;
 }

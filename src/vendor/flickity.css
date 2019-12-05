@@ -8,9 +8,8 @@
 
 .flickity-viewport {
   overflow: hidden;
-    position: relative;
-    height: 270px;
-
+  position: relative;
+  height: 280px!important;
 }
 
 .flickity-slider {
@@ -126,7 +125,7 @@
 /* ---- page dots ---- */
 
 .flickity-page-dots {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: -65px;
     padding: 0;

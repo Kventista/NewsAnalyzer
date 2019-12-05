@@ -4,6 +4,7 @@
 @import url('../blocks/background/background.css');
 @import url('../blocks/search/search.css');
 @import url('../blocks/nothing/nothing.css');
+@import url('../blocks/server-err/server-err.css');
 @import url('../blocks/loader/loader.css');
 @import url('../blocks/idle/idle.css');
 @import url('../blocks/content/content.css');

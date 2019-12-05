@@ -16,7 +16,7 @@
 <body>
   <div class="page">
     <div class="background content">
-      <header class="header header__stripe-white content">
+      <header class="header header_stripe-white content">
         <a class="header__logo white-theme" href="./index.html">NewsAnalyzer</a>
         <nav class="header__menu">
           <a class="header__main header__main_choice white-theme" href="./index.html">Главная</a>
@@ -29,8 +29,9 @@
         <p class="search__subtitle">Введите в поиске любую тему и узнайте насколько популярной она была в новостях за
           прошедшую неделю</p>
         <form id="search__form" name="search">
-          <input name="search-field" type="text" class="search__field" placeholder="Введите тему новости" />
+          <input name="search-field" type="text" class="search__field" placeholder="Введите тему новости" required />
           <button class="button search__button">Искать</button>
+          <div class="search__form-err">Нужно ввести ключевое слово</div>
         </form>
       </section>
     </div>
@@ -45,97 +46,17 @@
         <h2 class="nothing__title">Ничего не найдено</h2>
         <p class="nothing__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
       </div>
-      <section class="cards">
+      <div class="server-err idle">
+        <div class="server-err__sad"></div>
+        <h2 class="server-err__title">Ошибка :(</h2>
+        <p class="server-err__subtitle">При запросе к серверу произошла ошибка. Попробуйте повторить позже.</p>
+      </div>
+      <section class="cards" style="display: none;">
         <div class="content__data">
           <h2 class="content__data-title">Результаты поиска</h2>
           <a class="content__data-analytics" href="./analytics.html">Посмотреть аналитику &gt;</a>
         </div>
         <div class="cards__box">
-          <!--Пример верстки карточек-->
-          <a class="cards__item" href="ya.ru" target="_blank">
-            <div class="cards__result">
-              <div class="cards__result-wrap">
-                <img class="cards__result-image" src="<%=require('./images/tyulpany.jpg')%>" alt="">
-              </div>
-              <div class="cards__result-box">
-                <p class="cards__date">5 мая, 2019</p>
-                <h3 class="cards__subtitle">Весело - весело встретим новый год!</h3>
-                <p class="cards__description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют
-                  бойцовскую кровь. </p>
-                <div class="cards__source">Meduza.io</div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item" href="ya.ru" target="_blank">
-            <div class="cards__result">
-              <div class="cards__result-wrap">
-                <img class=" cards__result-image " src="<%=require( './images/lavanda.jpg')%>" alt="">
-              </div>
-              <div class="cards__result__box">
-                <p class="cards__date">5 августа, 2019</p>
-                <h3 class="cards__subtitle">Весело - весело встретим новый год!</h3>
-                <p class="cards__description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют
-                  бойцовскую кровь. </p>
-                <div class="cards__source">Meduza.io</div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item" href="ya.ru" target="_blank">
-            <div class="cards__result">
-              <div class="cards__result-wrap">
-                <img class="cards__result-image" src="<%=require( './images/tyulpany.jpg')%>" alt="">
-              </div>
-              <div class="cards__result__box">
-                <p class="cards__date">5 июля, 2019</p>
-                <h3 class="cards__subtitle">Весело - весело встретим новый год!</h3>
-                <p class="cards__description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют
-                  бойцовскую кровь. </p>
-                <div class="cards__source">Meduza.io</div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item" href="ya.ru" target="_blank">
-            <div class="cards__result">
-              <div class="cards__result-wrap">
-                <img class="cards__result-image" src="<%=require( './images/lavanda.jpg')%>" alt="">
-              </div>
-              <div class="cards__result__box">
-                <p class="cards__date">5 марта, 2019</p>
-                <h3 class="cards__subtitle">Весело - весело встретим новый год!</h3>
-                <p class="cards__description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют
-                  бойцовскую кровь. </p>
-                <div class="cards__source">Meduza.io</div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item" href="ya.ru" target="_blank">
-            <div class="cards__result">
-              <div class="cards__result-wrap">
-                <img class=" cards__result-image " src="<%=require( './images/tyulpany.jpg')%>" alt="">
-              </div>
-              <div class="cards__result__box">
-                <p class="cards__date">5 апреля, 2019</p>
-                <h3 class="cards__subtitle">Весело - весело встретим новый год!</h3>
-                <p class="cards__description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют
-                  бойцовскую кровь. </p>
-                <div class="cards__source">Meduza.io</div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item" href="ya.ru" target="_blank">
-            <div class="cards__result">
-              <div class="cards__result-wrap">
-                <img class="cards__result-image" src="<%=require( './images/lavanda.jpg')%>" alt="">
-              </div>
-              <div class="cards__result__box">
-                <p class="cards__date">5 января, 2019</p>
-                <h3 class="cards__subtitle">Весело - весело встретим новый год!</h3>
-                <p class="cards__description">Отгуляло отрочество. Вот и декабрь на дворе. Хлопья снега слегка гримируют
-                  бойцовскую кровь. </p>
-                <div class="cards__source">Meduza.io</div>
-              </div>
-            </div>
-          </a>
         </div>
         <button class="button cards__button">Показать ещё</button>
       </section>
