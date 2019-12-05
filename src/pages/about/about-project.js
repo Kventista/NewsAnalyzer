@@ -9,6 +9,8 @@ const flkty = new Flickity('.flickity', {
     contain: true,
     freeScroll: true,
     wrapAround: true,
+    setGallerySize: false,
+    
 });
 const gitApi = new GitApi('https://api.github.com/repos/Kventista/NewsAnalyzer/commits');
 const serverError = document.querySelector('.server-err');
@@ -16,9 +18,12 @@ const section = document.querySelector('.history');
 const loader = document.querySelector('.loader');
 
 function makeCommitCell(item) {
-
+  const carousel = document.createElement('div');
+  carousel.classList.add('carousel');
+ 
   const cell = document.createElement('div');
   cell.classList.add('carousel-cell');
+  carousel.appendChild(cell);
 
   const cellBox = document.createElement('div');
   cellBox.classList.add('carousel-cell__box');
@@ -55,7 +60,7 @@ function makeCommitCell(item) {
   cellText.classList.add('carousel-cell__text');
   cellText.textContent = item.commit.message;
   cellBox.appendChild(cellText);
-  return cell;
+  return carousel;
 }
 
 Helper.showElementsFlex(loader);
