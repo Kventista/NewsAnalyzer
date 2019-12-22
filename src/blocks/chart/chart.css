@@ -3,10 +3,10 @@
 @import url('__box-mention/chart__box-mention.css');
 @import url('__container/chart__container.css');
 @import url('__division/chart__division.css');
-@import url('__division-perc/chart__division-perc.css');
+@import url('__quantity/chart__quantity.css');
 @import url('__grid/chart__grid.css');
 @import url('__grid-date/chart__grid-date.css');
-@import url('__grid-graph/chart_grid__graph.css');
+@import url('__grid-column/chart__grid-column.css');
 .chart {
   position: relative;
   padding-left: 104px;

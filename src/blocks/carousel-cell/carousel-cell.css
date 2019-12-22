@@ -6,28 +6,3 @@
 @import url('__title/carousel-cell__title.css');
 @import url('__mail/carousel-cell__mail.css');
 @import url('__text/carousel-cell__text.css');
-.carousel-cell {
-    width: 33%;
-    height: 250px;
-    margin-right: 10px;
-    width: 400px!important;
-    min-height: 220px;
-    flex-shrink: 0;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-}
-
-@media  all and (max-width: 399px) {
-    .carousel-cell {
-        width: 100%!important;
-        margin-bottom: 48px;
-    }
-}
-
-@media all and (min-width: 399px)and (max-width: 799px)  {
-    .carousel-cell {
-        width: 336px!important;
-        margin-bottom: 80px;
-    }
-}

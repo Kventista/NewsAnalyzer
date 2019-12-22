@@ -1,0 +1,9 @@
+.author__box {
+    flex: 0 2 464px;
+}
+
+@media (max-width: 550px) {
+    .author__box {
+        flex: 1;
+    }
+}

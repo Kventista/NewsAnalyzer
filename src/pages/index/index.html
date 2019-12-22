@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ксения Макарова">
+  <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
+  <link rel="icon" href="<%=require('../../images/logo.png')%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <title>NewsAnalyzer</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="background content">
+      <header class="header header_stripe-white content">
+        <a class="header__logo white-theme link" href="./index.html">NewsAnalyzer</a>
+        <nav class="header__menu">
+          <a class="header__main header__main_choice white-theme link" href="./index.html">Главная</a>
+          <a class="header__about white-theme link" href="./about-project.html">О проекте</a>
+        </nav>
+      </header>
+
+      <section class="search">
+        <h1 class="search__title">Что в мире творится?</h1>
+        <p class="search__text">Введите в поиске любую тему и узнайте насколько популярной она была в новостях за
+          прошедшую неделю</p>
+        <form id="search__form" name="search">
+          <input class="search__field" name="search-field" type="text" placeholder="Введите тему новости" required />
+          <button class="button search__button">Искать</button>
+          <div class="search__form-err">Нужно ввести ключевое слово</div>
+        </form>
+      </section>
+    </div>
+
+    <main class="content">
+      <div class="loader idle">
+        <div class="loader__round"></div>
+        <p class="loader__text">Ищем новости...</p>
+      </div>
+      <div class="nothing idle">
+        <div class="nothing__art"></div>
+        <h2 class="nothing__title">Ничего не найдено</h2>
+        <p class="nothing__text">К сожалению по вашему запросу ничего не найдено.</p>
+      </div>
+      <div class="server-err idle">
+        <div class="server-err__art"></div>
+        <h2 class="server-err__title">Ошибка :(</h2>
+        <p class="server-err__text">При запросе к серверу произошла ошибка. Попробуйте повторить позже.</p>
+      </div>
+      <section class="cards">
+        <div class="content__data">
+          <h2 class="content__data-title">Результаты поиска</h2>
+          <a class="content__data-analytics link" href="./analytics.html">Посмотреть аналитику &gt;</a>
+        </div>
+        <div class="cards__box">
+        </div>
+        <button class="button cards__button">Показать ещё</button>
+      </section>
+
+
+
+      <section class="author">
+        <div class="author__box">
+          <picture>
+            <source class="author__photo" srcset="<%=require('../../images/author600.jpg')%>"
+              media="(min-width: 600px)">
+            <source class="author__photo" srcset="<%=require('../../images/author320.jpg')%>"
+              media="(min-width: 320px)">
+            <img class="author__photo" src="<%=require('../../images/author.jpg')%>" alt="фото автора">
+          </picture>
+        </div>
+        <div class="author__text">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__info">Меня зовут Ксения Макарова (на GitHub, да и почти везде Kventista). Надеюсь, в будущем
+            успешный frontend разработчик. Пока всего лишь энергетик.
+            <p>В Яндекс.Практикум пришла, и прошла специальность frontend разработка, с нуля. Освоила HTML5, CSS3,
+              JavaScript ES6.</p>
+
+            <p>Нравится верстать страницы, пользоваться БЭМ, flex- и grid-layout. Работать по макетам Figma. Сборку
+              проектов осуществляю Webpack’ом.</p>
+
+            <p>Не боюсь менять профессиональный вектор и залезать в новые технологии и сферы деятельности.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer content">
+      <span class="footer__cp">&#169; 2019 Kventista</span>
+      <nav class="footer__box">
+        <a class="footer__link link" href="./index.html">Главная</a>
+        <a class="footer__link link" href="./about-project.html">О проекте</a>
+        <a class="footer__link link" href="https://praktikum.yandex.ru">Я.Практикум</a>
+      </nav>
+      <div class="footer__boxfav">
+        <a class="footer__icon link" href="https://github.com">
+          <img src="<%=require('../../images/github.svg')%>" alt="git-logo">
+        </a>
+        <a class="footer__icon link" href="https://vk.com/kventista">
+          <img src="<%=require('../../images/vk.png')%>" alt="vk-logo">
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

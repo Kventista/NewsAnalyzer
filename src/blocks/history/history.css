@@ -1,4 +1,5 @@
 @import url('../content/content.css');
+@import url('../carousel/carousel.css');
 @import url('../carousel-cell/carousel-cell.css');
 @import url('__box/history__box.css');
 .history {

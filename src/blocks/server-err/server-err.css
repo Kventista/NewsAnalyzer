@@ -1,6 +1,6 @@
-@import url('__sad/server-err__sad.css');
+@import url('__art/server-err__art.css');
 @import url('__title/server-err__title.css');
-/*@import url('__subtitle/server-err__subtitle.css/');*/
+/*@import url('__text/server-err__text.css/');*/
 .server-err {
   display: flex;
   flex-direction: column;

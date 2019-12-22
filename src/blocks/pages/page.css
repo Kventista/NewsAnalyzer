@@ -1,5 +1,5 @@
 .page {
-  font-family: 'roboto-regular';
+  font-family: 'roboto-regular', Arial, sans-serif;
   color: black;
   -moz-osx-font-smoothing: grayscale;
   -moz-text-size-adjust: 100%;

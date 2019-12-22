@@ -4,10 +4,6 @@
   border-radius: 16px;
   background-color: #fff;
   transition: transform .2s ease-in-out;
-}
-
-@media (max-width: 679px) {
-    .carousel-cell__box {
-        margin: 12px 16px 20px;
-    }
+  height: 200px;
+  overflow: hidden;
 }

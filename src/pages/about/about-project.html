@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ксения Макарова">
+  <meta name="about-project" content="Сайт для поиска новостей за последнюю неделю">
+  <link rel="icon" href="<%=require('../../images/logo.png')%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+  <title>NewsAnalyzer</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="content">
+      <header class="header header_stripe-black">
+        <a class="header__logo black-theme link" href="./index.html">NewsAnalyzer</a>
+        <nav class="header__menu">
+          <a class="header__main header__main_black link" href="./index.html">Главная</a>
+          <a class="header__about header__about_black header__about_choice link" href="./about-project.html">О
+            проекте</a>
+        </nav>
+      </header>
+    </div>
+
+    <main class="content">
+      <section class="client">
+        <h1 class="client__title">Клиентам</h1>
+        <p class="client__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
+          научился
+          студент, и какими технологиями владеет.</p>
+        <p class="client__text">Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+          Кроме
+          того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим
+          методологиям. Также сайт проще и дешевле
+          поддерживать.
+        </p>
+        <p class="client__text">Карточки с новостям приходят с сервера и обрабатываются асинхронно. То есть сайт
+          продолжает
+          работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+        <p class="client__text">При создании проекта была использована сборка технологией Webpack. Это современный
+          подход к
+          разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
+          браузерах. Даже если посетители — пользователи
+          старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.
+        </p>
+        <p class="client__text">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы
+          рекомендуем обратиться к этому студенту.</p>
+      </section>
+
+      <section class="technologies">
+        <h2 class="technologies__title">Используемые технологии</h2>
+        <div class="technologies__box">
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">HTML</h3>
+            <img class=" technologies__item-image" src="<%=require('../../images/html-icon.png')%>"
+              alt="применен HTML5">
+          </div>
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">CSS</h3>
+            <img class=" technologies__item-image" src="<%=require('../../images/css-icon.png')%>"
+              alt="применен CSS 3.0">
+          </div>
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">Java Script</h3>
+            <img class=" technologies__item-image" src="<%=require('../../images/js-icon.png')%>" alt="применен JS ES6">
+          </div>
+          <div class="technologies__item">
+            <h3 class=" technologies__item-title">Webpack</h3>
+            <img class=" technologies__item-image" src="<%=require('../../images/wp-icon.png')%>"
+              alt="применен Webpack сборщик">
+          </div>
+        </div>
+      </section>
+
+      <section class="author">
+        <div class="author__box">
+          <picture>
+            <source class="author__photo" srcset="<%=require('../../images/author600.jpg')%>"
+              media="(min-width: 600px)">
+            <source class="author__photo" srcset="<%=require('../../images/author320.jpg')%>"
+              media="(min-width: 320px)">
+            <img class="author__photo" src="<%=require('../../images/author.jpg')%>" alt="фото автора">
+          </picture>
+        </div>
+        <div class="author__text">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__info">Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная,
+            философски
+            нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к
+            автономной реальности, нацеленность
+            на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления
+            знаний о внешней тексту действительности. В лингвистике термин текст используется в широком значении,
+            включая и образцы
+            устной речи. Восприятие текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И.
+            Р. Гальперин определяет текст следующим образом: «это письменное сообщение, объективированное в виде
+            письменного документа.
+        </div>
+      </section>
+      <section class="history">
+        <div class="content__data">
+          <h2 class="content__data-title">История коммитов из GitHub</h2>
+          <a href="https://github.com/Kventista/NewsAnalyzer" class="content__data-analytics link">Открыть в
+            GitHub &gt;</a>
+        </div>
+        <div class="loader idle">
+          <div class="loader__round"></div>
+          <p class="loader__text">Получаю список коммитов...</p>
+        </div>
+        <div class="history__box">
+          <div class="flickity">
+          </div>
+        </div>
+      </section>
+      <div class="server-err idle">
+        <div class="server-err__art"></div>
+        <h2 class="server-err__title">Ошибка :(</h2>
+        <p class="server-err__text">При получении списка коммитов с сервера произошла ошибка. Попробуйте обновить
+          страницу.</p>
+      </div>
+    </main>
+
+    <footer class="footer content">
+      <span class="footer__cp">&#169; 2019 Kventista</span>
+      <nav class="footer__box">
+        <a class="footer__link link" href="./index.html">Главная</a>
+        <a class="footer__link link" href="./about-project.html">О проекте</a>
+        <a class="footer__link link" href="https://praktikum.yandex.ru">Я.Практикум</a>
+      </nav>
+      <div class="footer__boxfav">
+        <a class="footer__icon link" href="https://github.com">
+          <img src="<%=require('../../images/github.svg')%>" alt="git-logo">
+        </a>
+        <a class="footer__icon link" href="https://vk.com/kventista">
+          <img src="<%=require('../../images/vk.png')%>" alt="vk-logo">
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

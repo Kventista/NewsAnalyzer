@@ -1,0 +1,32 @@
+.chart__quantity {
+  position: absolute;
+  top: 16px;
+  transform: translateX(-50%);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+.chart__quantity:nth-child(1){
+  left: 0;
+  transform: none;
+}
+
+.chart__quantity:nth-child(2){
+  left: 25%;
+}
+
+.chart__quantity:nth-child(3){
+  left: 50%;
+}
+
+.chart__quantity:nth-child(4){
+  left: 75%;
+}
+
+.chart__quantity:nth-child(5){
+  right: 0;
+  transform: none;
+}
