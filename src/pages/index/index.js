@@ -13,8 +13,8 @@ const cardsSection = document.querySelector('.cards');
 const serverError = document.querySelector('.server-err');
 const searchField = document.querySelector('.search__field');
 
-const newsApiToken = 'b4311048808a4f1f9e06934c2bf1b51c';
-const news = new NewsApi('https://newsapi.org/v2/everything?', newsApiToken);
+const newsApiToken = 'da1e18a401004b63b921f33cf47f6f7e';
+const news = new NewsApi('http://newsapi.org/v2/everything?', newsApiToken);
 const cardList = new CardList(cardBox);
 const today = new Date();
 const milisecondsInWeek = 60*60*24*7*1000;
