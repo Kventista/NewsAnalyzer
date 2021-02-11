@@ -1,6 +1,4 @@
-# Дипломная работа студентки Яндекс.Практикума
-
-## [NewsAnalyzer](https://Kventista.github.io/NewsAnalyzer/)
+# [NewsAnalyzer](https://Kventista.github.io/NewsAnalyzer/)
 
 Сайт предназначен для поиска новостей по ключевым запросам. Производит анализ полученного результата за прошедшие 7 дней.
 ***
